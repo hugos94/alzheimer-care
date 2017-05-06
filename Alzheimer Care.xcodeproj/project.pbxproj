@@ -15,6 +15,7 @@
 		F5ED00CD1EBD59B10085A171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5ED00CB1EBD59B10085A171 /* LaunchScreen.storyboard */; };
 		F5ED00D81EBD59B10085A171 /* Alzheimer_CareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED00D71EBD59B10085A171 /* Alzheimer_CareTests.swift */; };
 		F5ED00E31EBD59B10085A171 /* Alzheimer_CareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED00E21EBD59B10085A171 /* Alzheimer_CareUITests.swift */; };
+		F5ED00F11EBD5C1D0085A171 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F5ED00F01EBD5C1D0085A171 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F5ED00DE1EBD59B10085A171 /* Alzheimer CareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alzheimer CareUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5ED00E21EBD59B10085A171 /* Alzheimer_CareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alzheimer_CareUITests.swift; sourceTree = "<group>"; };
 		F5ED00E41EBD59B10085A171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5ED00F01EBD5C1D0085A171 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		F5ED00B31EBD59B10085A171 = {
 			isa = PBXGroup;
 			children = (
+				F5ED00F01EBD5C1D0085A171 /* .gitignore */,
 				F5ED00BE1EBD59B10085A171 /* Alzheimer Care */,
 				F5ED00D61EBD59B10085A171 /* Alzheimer CareTests */,
 				F5ED00E11EBD59B10085A171 /* Alzheimer CareUITests */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5ED00F11EBD5C1D0085A171 /* .gitignore in Resources */,
 				F5ED00CD1EBD59B10085A171 /* LaunchScreen.storyboard in Resources */,
 				F5ED00CA1EBD59B10085A171 /* Assets.xcassets in Resources */,
 				F5ED00C51EBD59B10085A171 /* Main.storyboard in Resources */,
