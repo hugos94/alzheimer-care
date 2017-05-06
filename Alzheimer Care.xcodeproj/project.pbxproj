@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5ED00C01EBD59B10085A171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED00BF1EBD59B10085A171 /* AppDelegate.swift */; };
+		F5ED00C21EBD59B10085A171 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED00C11EBD59B10085A171 /* ViewController.swift */; };
+		F5ED00C51EBD59B10085A171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5ED00C31EBD59B10085A171 /* Main.storyboard */; };
+		F5ED00C81EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5ED00C61EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld */; };
+		F5ED00CA1EBD59B10085A171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5ED00C91EBD59B10085A171 /* Assets.xcassets */; };
+		F5ED00CD1EBD59B10085A171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5ED00CB1EBD59B10085A171 /* LaunchScreen.storyboard */; };
+		F5ED00D81EBD59B10085A171 /* Alzheimer_CareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED00D71EBD59B10085A171 /* Alzheimer_CareTests.swift */; };
+		F5ED00E31EBD59B10085A171 /* Alzheimer_CareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED00E21EBD59B10085A171 /* Alzheimer_CareUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5ED00D41EBD59B10085A171 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5ED00B41EBD59B10085A171 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5ED00BB1EBD59B10085A171;
+			remoteInfo = "Alzheimer Care";
+		};
+		F5ED00DF1EBD59B10085A171 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5ED00B41EBD59B10085A171 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5ED00BB1EBD59B10085A171;
+			remoteInfo = "Alzheimer Care";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5ED00BC1EBD59B10085A171 /* Alzheimer Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alzheimer Care.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5ED00BF1EBD59B10085A171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5ED00C11EBD59B10085A171 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5ED00C41EBD59B10085A171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5ED00C71EBD59B10085A171 /* Alzheimer_Care.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Alzheimer_Care.xcdatamodel; sourceTree = "<group>"; };
+		F5ED00C91EBD59B10085A171 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5ED00CC1EBD59B10085A171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5ED00CE1EBD59B10085A171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5ED00D31EBD59B10085A171 /* Alzheimer CareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alzheimer CareTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5ED00D71EBD59B10085A171 /* Alzheimer_CareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alzheimer_CareTests.swift; sourceTree = "<group>"; };
+		F5ED00D91EBD59B10085A171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5ED00DE1EBD59B10085A171 /* Alzheimer CareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alzheimer CareUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5ED00E21EBD59B10085A171 /* Alzheimer_CareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alzheimer_CareUITests.swift; sourceTree = "<group>"; };
+		F5ED00E41EBD59B10085A171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5ED00B91EBD59B10085A171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ED00D01EBD59B10085A171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ED00DB1EBD59B10085A171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5ED00B31EBD59B10085A171 = {
+			isa = PBXGroup;
+			children = (
+				F5ED00BE1EBD59B10085A171 /* Alzheimer Care */,
+				F5ED00D61EBD59B10085A171 /* Alzheimer CareTests */,
+				F5ED00E11EBD59B10085A171 /* Alzheimer CareUITests */,
+				F5ED00BD1EBD59B10085A171 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5ED00BD1EBD59B10085A171 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5ED00BC1EBD59B10085A171 /* Alzheimer Care.app */,
+				F5ED00D31EBD59B10085A171 /* Alzheimer CareTests.xctest */,
+				F5ED00DE1EBD59B10085A171 /* Alzheimer CareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5ED00BE1EBD59B10085A171 /* Alzheimer Care */ = {
+			isa = PBXGroup;
+			children = (
+				F5ED00BF1EBD59B10085A171 /* AppDelegate.swift */,
+				F5ED00C11EBD59B10085A171 /* ViewController.swift */,
+				F5ED00C31EBD59B10085A171 /* Main.storyboard */,
+				F5ED00C91EBD59B10085A171 /* Assets.xcassets */,
+				F5ED00CB1EBD59B10085A171 /* LaunchScreen.storyboard */,
+				F5ED00CE1EBD59B10085A171 /* Info.plist */,
+				F5ED00C61EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld */,
+			);
+			path = "Alzheimer Care";
+			sourceTree = "<group>";
+		};
+		F5ED00D61EBD59B10085A171 /* Alzheimer CareTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5ED00D71EBD59B10085A171 /* Alzheimer_CareTests.swift */,
+				F5ED00D91EBD59B10085A171 /* Info.plist */,
+			);
+			path = "Alzheimer CareTests";
+			sourceTree = "<group>";
+		};
+		F5ED00E11EBD59B10085A171 /* Alzheimer CareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5ED00E21EBD59B10085A171 /* Alzheimer_CareUITests.swift */,
+				F5ED00E41EBD59B10085A171 /* Info.plist */,
+			);
+			path = "Alzheimer CareUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5ED00BB1EBD59B10085A171 /* Alzheimer Care */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5ED00E71EBD59B10085A171 /* Build configuration list for PBXNativeTarget "Alzheimer Care" */;
+			buildPhases = (
+				F5ED00B81EBD59B10085A171 /* Sources */,
+				F5ED00B91EBD59B10085A171 /* Frameworks */,
+				F5ED00BA1EBD59B10085A171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Alzheimer Care";
+			productName = "Alzheimer Care";
+			productReference = F5ED00BC1EBD59B10085A171 /* Alzheimer Care.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5ED00D21EBD59B10085A171 /* Alzheimer CareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5ED00EA1EBD59B10085A171 /* Build configuration list for PBXNativeTarget "Alzheimer CareTests" */;
+			buildPhases = (
+				F5ED00CF1EBD59B10085A171 /* Sources */,
+				F5ED00D01EBD59B10085A171 /* Frameworks */,
+				F5ED00D11EBD59B10085A171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5ED00D51EBD59B10085A171 /* PBXTargetDependency */,
+			);
+			name = "Alzheimer CareTests";
+			productName = "Alzheimer CareTests";
+			productReference = F5ED00D31EBD59B10085A171 /* Alzheimer CareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5ED00DD1EBD59B10085A171 /* Alzheimer CareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5ED00ED1EBD59B10085A171 /* Build configuration list for PBXNativeTarget "Alzheimer CareUITests" */;
+			buildPhases = (
+				F5ED00DA1EBD59B10085A171 /* Sources */,
+				F5ED00DB1EBD59B10085A171 /* Frameworks */,
+				F5ED00DC1EBD59B10085A171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5ED00E01EBD59B10085A171 /* PBXTargetDependency */,
+			);
+			name = "Alzheimer CareUITests";
+			productName = "Alzheimer CareUITests";
+			productReference = F5ED00DE1EBD59B10085A171 /* Alzheimer CareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5ED00B41EBD59B10085A171 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Hugo Santos Piauilino";
+				TargetAttributes = {
+					F5ED00BB1EBD59B10085A171 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					F5ED00D21EBD59B10085A171 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F5ED00BB1EBD59B10085A171;
+					};
+					F5ED00DD1EBD59B10085A171 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F5ED00BB1EBD59B10085A171;
+					};
+				};
+			};
+			buildConfigurationList = F5ED00B71EBD59B10085A171 /* Build configuration list for PBXProject "Alzheimer Care" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5ED00B31EBD59B10085A171;
+			productRefGroup = F5ED00BD1EBD59B10085A171 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5ED00BB1EBD59B10085A171 /* Alzheimer Care */,
+				F5ED00D21EBD59B10085A171 /* Alzheimer CareTests */,
+				F5ED00DD1EBD59B10085A171 /* Alzheimer CareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5ED00BA1EBD59B10085A171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ED00CD1EBD59B10085A171 /* LaunchScreen.storyboard in Resources */,
+				F5ED00CA1EBD59B10085A171 /* Assets.xcassets in Resources */,
+				F5ED00C51EBD59B10085A171 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ED00D11EBD59B10085A171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ED00DC1EBD59B10085A171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5ED00B81EBD59B10085A171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ED00C21EBD59B10085A171 /* ViewController.swift in Sources */,
+				F5ED00C01EBD59B10085A171 /* AppDelegate.swift in Sources */,
+				F5ED00C81EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ED00CF1EBD59B10085A171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ED00D81EBD59B10085A171 /* Alzheimer_CareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5ED00DA1EBD59B10085A171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ED00E31EBD59B10085A171 /* Alzheimer_CareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5ED00D51EBD59B10085A171 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5ED00BB1EBD59B10085A171 /* Alzheimer Care */;
+			targetProxy = F5ED00D41EBD59B10085A171 /* PBXContainerItemProxy */;
+		};
+		F5ED00E01EBD59B10085A171 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5ED00BB1EBD59B10085A171 /* Alzheimer Care */;
+			targetProxy = F5ED00DF1EBD59B10085A171 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5ED00C31EBD59B10085A171 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5ED00C41EBD59B10085A171 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5ED00CB1EBD59B10085A171 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5ED00CC1EBD59B10085A171 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5ED00E51EBD59B10085A171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5ED00E61EBD59B10085A171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5ED00E81EBD59B10085A171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Alzheimer Care/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackatruck.Alzheimer-Care";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F5ED00E91EBD59B10085A171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Alzheimer Care/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackatruck.Alzheimer-Care";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F5ED00EB1EBD59B10085A171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Alzheimer CareTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackatruck.Alzheimer-CareTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alzheimer Care.app/Alzheimer Care";
+			};
+			name = Debug;
+		};
+		F5ED00EC1EBD59B10085A171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Alzheimer CareTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackatruck.Alzheimer-CareTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alzheimer Care.app/Alzheimer Care";
+			};
+			name = Release;
+		};
+		F5ED00EE1EBD59B10085A171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Alzheimer CareUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackatruck.Alzheimer-CareUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Alzheimer Care";
+			};
+			name = Debug;
+		};
+		F5ED00EF1EBD59B10085A171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Alzheimer CareUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hackatruck.Alzheimer-CareUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Alzheimer Care";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5ED00B71EBD59B10085A171 /* Build configuration list for PBXProject "Alzheimer Care" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5ED00E51EBD59B10085A171 /* Debug */,
+				F5ED00E61EBD59B10085A171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5ED00E71EBD59B10085A171 /* Build configuration list for PBXNativeTarget "Alzheimer Care" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5ED00E81EBD59B10085A171 /* Debug */,
+				F5ED00E91EBD59B10085A171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5ED00EA1EBD59B10085A171 /* Build configuration list for PBXNativeTarget "Alzheimer CareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5ED00EB1EBD59B10085A171 /* Debug */,
+				F5ED00EC1EBD59B10085A171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5ED00ED1EBD59B10085A171 /* Build configuration list for PBXNativeTarget "Alzheimer CareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5ED00EE1EBD59B10085A171 /* Debug */,
+				F5ED00EF1EBD59B10085A171 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5ED00C61EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5ED00C71EBD59B10085A171 /* Alzheimer_Care.xcdatamodel */,
+			);
+			currentVersion = F5ED00C71EBD59B10085A171 /* Alzheimer_Care.xcdatamodel */;
+			path = Alzheimer_Care.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F5ED00B41EBD59B10085A171 /* Project object */;
+}
