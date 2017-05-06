@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D16805E140C94324F4514DC1 /* Pods_Alzheimer_CareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB93E27C03ECA1D0146C305 /* Pods_Alzheimer_CareTests.framework */; };
+		E623C07AD00A0C7E6D70F923 /* Pods_Alzheimer_Care.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D74CCC5EF1448A23FE3C92 /* Pods_Alzheimer_Care.framework */; };
 		F5ED00C01EBD59B10085A171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED00BF1EBD59B10085A171 /* AppDelegate.swift */; };
 		F5ED00C21EBD59B10085A171 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED00C11EBD59B10085A171 /* ViewController.swift */; };
 		F5ED00C51EBD59B10085A171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5ED00C31EBD59B10085A171 /* Main.storyboard */; };
@@ -15,7 +17,7 @@
 		F5ED00CD1EBD59B10085A171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5ED00CB1EBD59B10085A171 /* LaunchScreen.storyboard */; };
 		F5ED00D81EBD59B10085A171 /* Alzheimer_CareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED00D71EBD59B10085A171 /* Alzheimer_CareTests.swift */; };
 		F5ED00E31EBD59B10085A171 /* Alzheimer_CareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED00E21EBD59B10085A171 /* Alzheimer_CareUITests.swift */; };
-		F5ED00F11EBD5C1D0085A171 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F5ED00F01EBD5C1D0085A171 /* .gitignore */; };
+		FA5B24AE465EC57F5C8031B9 /* Pods_Alzheimer_CareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44B4CE1C5616A897579ACF8 /* Pods_Alzheimer_CareUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5126C331EAE9282F58C85026 /* Pods-Alzheimer CareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzheimer CareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alzheimer CareUITests/Pods-Alzheimer CareUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6713121D410C730074CB1E82 /* Pods-Alzheimer Care.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzheimer Care.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alzheimer Care/Pods-Alzheimer Care.release.xcconfig"; sourceTree = "<group>"; };
+		832A5B18D65344B3793FAC37 /* Pods-Alzheimer CareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzheimer CareUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alzheimer CareUITests/Pods-Alzheimer CareUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9EB93E27C03ECA1D0146C305 /* Pods_Alzheimer_CareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alzheimer_CareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44B4CE1C5616A897579ACF8 /* Pods_Alzheimer_CareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alzheimer_CareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D74CCC5EF1448A23FE3C92 /* Pods_Alzheimer_Care.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alzheimer_Care.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDE10EB6700C8B99D3E1B70B /* Pods-Alzheimer Care.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzheimer Care.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alzheimer Care/Pods-Alzheimer Care.debug.xcconfig"; sourceTree = "<group>"; };
+		F1C73F77A6B95E5DD4808BE4 /* Pods-Alzheimer CareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzheimer CareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alzheimer CareTests/Pods-Alzheimer CareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5ED00BC1EBD59B10085A171 /* Alzheimer Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alzheimer Care.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5ED00BF1EBD59B10085A171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5ED00C11EBD59B10085A171 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +60,7 @@
 		F5ED00DE1EBD59B10085A171 /* Alzheimer CareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alzheimer CareUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5ED00E21EBD59B10085A171 /* Alzheimer_CareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alzheimer_CareUITests.swift; sourceTree = "<group>"; };
 		F5ED00E41EBD59B10085A171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5ED00F01EBD5C1D0085A171 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FA59B0583DA6AC87EDE3A94D /* Pods-Alzheimer CareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzheimer CareTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alzheimer CareTests/Pods-Alzheimer CareTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E623C07AD00A0C7E6D70F923 /* Pods_Alzheimer_Care.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D16805E140C94324F4514DC1 /* Pods_Alzheimer_CareTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,20 +84,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5B24AE465EC57F5C8031B9 /* Pods_Alzheimer_CareUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65C7AF6D9166F177AEF0FF71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6D74CCC5EF1448A23FE3C92 /* Pods_Alzheimer_Care.framework */,
+				9EB93E27C03ECA1D0146C305 /* Pods_Alzheimer_CareTests.framework */,
+				C44B4CE1C5616A897579ACF8 /* Pods_Alzheimer_CareUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B362476D505875AF3877819C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDE10EB6700C8B99D3E1B70B /* Pods-Alzheimer Care.debug.xcconfig */,
+				6713121D410C730074CB1E82 /* Pods-Alzheimer Care.release.xcconfig */,
+				F1C73F77A6B95E5DD4808BE4 /* Pods-Alzheimer CareTests.debug.xcconfig */,
+				FA59B0583DA6AC87EDE3A94D /* Pods-Alzheimer CareTests.release.xcconfig */,
+				5126C331EAE9282F58C85026 /* Pods-Alzheimer CareUITests.debug.xcconfig */,
+				832A5B18D65344B3793FAC37 /* Pods-Alzheimer CareUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F5ED00B31EBD59B10085A171 = {
 			isa = PBXGroup;
 			children = (
-				F5ED00F01EBD5C1D0085A171 /* .gitignore */,
 				F5ED00BE1EBD59B10085A171 /* Alzheimer Care */,
 				F5ED00D61EBD59B10085A171 /* Alzheimer CareTests */,
 				F5ED00E11EBD59B10085A171 /* Alzheimer CareUITests */,
 				F5ED00BD1EBD59B10085A171 /* Products */,
+				B362476D505875AF3877819C /* Pods */,
+				65C7AF6D9166F177AEF0FF71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5ED00E71EBD59B10085A171 /* Build configuration list for PBXNativeTarget "Alzheimer Care" */;
 			buildPhases = (
+				5A949BE8982C1CB763D361E7 /* [CP] Check Pods Manifest.lock */,
 				F5ED00B81EBD59B10085A171 /* Sources */,
 				F5ED00B91EBD59B10085A171 /* Frameworks */,
 				F5ED00BA1EBD59B10085A171 /* Resources */,
+				3AADEF2A18263EF1D2DB168A /* [CP] Embed Pods Frameworks */,
+				5BFD7F122EF664449BAB385C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5ED00EA1EBD59B10085A171 /* Build configuration list for PBXNativeTarget "Alzheimer CareTests" */;
 			buildPhases = (
+				6E7CC2EFD2E4D3C4CC8C654E /* [CP] Check Pods Manifest.lock */,
 				F5ED00CF1EBD59B10085A171 /* Sources */,
 				F5ED00D01EBD59B10085A171 /* Frameworks */,
 				F5ED00D11EBD59B10085A171 /* Resources */,
+				FD443D5CA959FA1293F40A52 /* [CP] Embed Pods Frameworks */,
+				8FD0BE37EBDF7742C2AE2C90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5ED00ED1EBD59B10085A171 /* Build configuration list for PBXNativeTarget "Alzheimer CareUITests" */;
 			buildPhases = (
+				3E67E8E724F6F70CE0AD3768 /* [CP] Check Pods Manifest.lock */,
 				F5ED00DA1EBD59B10085A171 /* Sources */,
 				F5ED00DB1EBD59B10085A171 /* Frameworks */,
 				F5ED00DC1EBD59B10085A171 /* Resources */,
+				061AB5091ABF1DCBC474EC78 /* [CP] Embed Pods Frameworks */,
+				76A79D336C954669260C5DC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,7 +284,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5ED00F11EBD5C1D0085A171 /* .gitignore in Resources */,
 				F5ED00CD1EBD59B10085A171 /* LaunchScreen.storyboard in Resources */,
 				F5ED00CA1EBD59B10085A171 /* Assets.xcassets in Resources */,
 				F5ED00C51EBD59B10085A171 /* Main.storyboard in Resources */,
@@ -260,6 +305,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		061AB5091ABF1DCBC474EC78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alzheimer CareUITests/Pods-Alzheimer CareUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AADEF2A18263EF1D2DB168A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alzheimer Care/Pods-Alzheimer Care-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E67E8E724F6F70CE0AD3768 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A949BE8982C1CB763D361E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5BFD7F122EF664449BAB385C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alzheimer Care/Pods-Alzheimer Care-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E7CC2EFD2E4D3C4CC8C654E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76A79D336C954669260C5DC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alzheimer CareUITests/Pods-Alzheimer CareUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD0BE37EBDF7742C2AE2C90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alzheimer CareTests/Pods-Alzheimer CareTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD443D5CA959FA1293F40A52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Alzheimer CareTests/Pods-Alzheimer CareTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5ED00B81EBD59B10085A171 /* Sources */ = {
@@ -418,6 +601,7 @@
 		};
 		F5ED00E81EBD59B10085A171 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE10EB6700C8B99D3E1B70B /* Pods-Alzheimer Care.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Alzheimer Care/Info.plist";
@@ -430,6 +614,7 @@
 		};
 		F5ED00E91EBD59B10085A171 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6713121D410C730074CB1E82 /* Pods-Alzheimer Care.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Alzheimer Care/Info.plist";
@@ -442,6 +627,7 @@
 		};
 		F5ED00EB1EBD59B10085A171 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1C73F77A6B95E5DD4808BE4 /* Pods-Alzheimer CareTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +642,7 @@
 		};
 		F5ED00EC1EBD59B10085A171 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA59B0583DA6AC87EDE3A94D /* Pods-Alzheimer CareTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -470,6 +657,7 @@
 		};
 		F5ED00EE1EBD59B10085A171 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5126C331EAE9282F58C85026 /* Pods-Alzheimer CareUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Alzheimer CareUITests/Info.plist";
@@ -483,6 +671,7 @@
 		};
 		F5ED00EF1EBD59B10085A171 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832A5B18D65344B3793FAC37 /* Pods-Alzheimer CareUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Alzheimer CareUITests/Info.plist";
