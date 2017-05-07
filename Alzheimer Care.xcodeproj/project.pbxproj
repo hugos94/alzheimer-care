@@ -11,6 +11,9 @@
 		E623C07AD00A0C7E6D70F923 /* Pods_Alzheimer_Care.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D74CCC5EF1448A23FE3C92 /* Pods_Alzheimer_Care.framework */; };
 		F503637B1EBD662A00ABF756 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F503637A1EBD662A00ABF756 /* HomeViewController.swift */; };
 		F503637D1EBD692100ABF756 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F503637C1EBD692100ABF756 /* RegisterViewController.swift */; };
+		F53118D31EBEC19C0035DA11 /* AddMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53118D21EBEC19C0035DA11 /* AddMemoryViewController.swift */; };
+		F53118D51EBEC5460035DA11 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53118D41EBEC5460035DA11 /* TimelineTableViewController.swift */; };
+		F53118D71EBEC5900035DA11 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53118D61EBEC5900035DA11 /* ActivitiesViewController.swift */; };
 		F5ED00C01EBD59B10085A171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED00BF1EBD59B10085A171 /* AppDelegate.swift */; };
 		F5ED00C51EBD59B10085A171 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5ED00C31EBD59B10085A171 /* Main.storyboard */; };
 		F5ED00C81EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5ED00C61EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld */; };
@@ -49,6 +52,9 @@
 		F1C73F77A6B95E5DD4808BE4 /* Pods-Alzheimer CareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzheimer CareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alzheimer CareTests/Pods-Alzheimer CareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F503637A1EBD662A00ABF756 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F503637C1EBD692100ABF756 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F53118D21EBEC19C0035DA11 /* AddMemoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemoryViewController.swift; sourceTree = "<group>"; };
+		F53118D41EBEC5460035DA11 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
+		F53118D61EBEC5900035DA11 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
 		F5ED00BC1EBD59B10085A171 /* Alzheimer Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alzheimer Care.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5ED00BF1EBD59B10085A171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5ED00C41EBD59B10085A171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,8 +125,11 @@
 		F58FAA001EBE8E2F00BC31D2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F53118D21EBEC19C0035DA11 /* AddMemoryViewController.swift */,
 				F503637A1EBD662A00ABF756 /* HomeViewController.swift */,
 				F503637C1EBD692100ABF756 /* RegisterViewController.swift */,
+				F53118D41EBEC5460035DA11 /* TimelineTableViewController.swift */,
+				F53118D61EBEC5900035DA11 /* ActivitiesViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -486,7 +495,10 @@
 			files = (
 				F5ED00C01EBD59B10085A171 /* AppDelegate.swift in Sources */,
 				F5ED00C81EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld in Sources */,
+				F53118D31EBEC19C0035DA11 /* AddMemoryViewController.swift in Sources */,
+				F53118D71EBEC5900035DA11 /* ActivitiesViewController.swift in Sources */,
 				F503637B1EBD662A00ABF756 /* HomeViewController.swift in Sources */,
+				F53118D51EBEC5460035DA11 /* TimelineTableViewController.swift in Sources */,
 				F503637D1EBD692100ABF756 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

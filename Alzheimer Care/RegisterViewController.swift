@@ -15,7 +15,6 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var userNumberTextField: UITextField!
     
     @IBAction func registerButton(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
     

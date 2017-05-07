@@ -1,31 +1,19 @@
 //
-//  HomeViewController.swift
+//  ActivitiesViewController.swift
 //  Alzheimer Care
 //
-//  Created by Hugo Santos Piauilino Neto on 05/05/17.
+//  Created by Hugo Santos Piauilino Neto on 07/05/17.
 //  Copyright © 2017 Hugo Santos Piauilino. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
-    
-    var userRegistred = false
+class ActivitiesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        
-        if !userRegistred {
-            userRegistred = true
-            performSegue(withIdentifier: "registerSegue", sender: self)
-
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,18 +22,14 @@ class HomeViewController: UIViewController {
     }
     
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if (segue.identifier == "registerSegue") {
-            
-        }
-        
     }
-    
+    */
 
 }

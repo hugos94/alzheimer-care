@@ -12,7 +12,7 @@
         <!--Timeline-->
         <scene sceneID="H53-XW-kHU">
             <objects>
-                <tableViewController title="Timeline" id="cWz-v6-FYd" sceneMemberID="viewController">
+                <tableViewController title="Timeline" id="cWz-v6-FYd" customClass="TimelineTableViewController" customModule="Alzheimer_Care" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="DLL-NJ-INS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,16 +32,51 @@
                             <outlet property="delegate" destination="cWz-v6-FYd" id="TR8-Ct-L3P"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="1rk-fl-iYa"/>
+                    <navigationItem key="navigationItem" title="Linha do Tempo" id="Y4N-Nr-Vxo">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="lhg-bR-DW0"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aRQ-LW-tCC">
+                            <connections>
+                                <segue destination="kZS-LW-lRW" kind="show" id="MEN-fh-9Bu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="no6-nf-2vP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-766" y="785"/>
+            <point key="canvasLocation" x="721" y="928"/>
+        </scene>
+        <!--Adicionar Memória-->
+        <scene sceneID="vEq-0p-IVT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXo-vN-sbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Adicionar Memória" id="kZS-LW-lRW" customClass="AddMemoryViewController" customModule="Alzheimer_Care" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qBN-zg-IF3"/>
+                        <viewControllerLayoutGuide type="bottom" id="6IF-sX-agb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pc2-5k-G8y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y76-Wa-Ggc">
+                                <rect key="frame" x="16" y="580" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Adicionar"/>
+                                <connections>
+                                    <action selector="addMemoryButton:" destination="kZS-LW-lRW" eventType="touchUpInside" id="XAj-pp-MNL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1461.5999999999999" y="927.88605697151434"/>
         </scene>
         <!--Activities-->
         <scene sceneID="aPi-kc-3da">
             <objects>
-                <viewController title="Activities" id="BWT-lH-qIn" sceneMemberID="viewController">
+                <viewController title="Activities" id="BWT-lH-qIn" customClass="ActivitiesViewController" customModule="Alzheimer_Care" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H0Y-vN-U90"/>
                         <viewControllerLayoutGuide type="bottom" id="y7b-zg-xLU"/>
@@ -49,13 +84,45 @@
                     <view key="view" contentMode="scaleToFill" id="aPe-PD-ZkW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCq-Od-txh">
+                                <rect key="frame" x="72" y="107" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7B-uO-eGt">
+                                <rect key="frame" x="229" y="107" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wk-w9-BLw">
+                                <rect key="frame" x="72" y="220" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAS-lp-WD4">
+                                <rect key="frame" x="229" y="220" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2N-oQ-jVe">
+                                <rect key="frame" x="72" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kb-9l-zh2">
+                                <rect key="frame" x="229" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="1LU-En-Vgu"/>
+                    <tabBarItem key="tabBarItem" title="Activities" id="1LU-En-Vgu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKH-Iw-4Wl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15" y="260"/>
+            <point key="canvasLocation" x="-15.199999999999999" y="261.31934032983509"/>
         </scene>
         <!--Home-->
         <scene sceneID="TKY-Bk-a2q">
@@ -68,6 +135,22 @@
                     <view key="view" contentMode="scaleToFill" id="Xyc-wn-bUZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8y-Kx-dnF">
+                                <rect key="frame" x="16" y="28" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Emergência!"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ERm-JD-qMn">
+                                <rect key="frame" x="16" y="89" width="343" height="475"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="KKi-de-qdO"/>
@@ -77,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kt9-UG-psC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15" y="-395"/>
+            <point key="canvasLocation" x="-15.199999999999999" y="-395.35232383808096"/>
         </scene>
         <!--Register-->
         <scene sceneID="bBZ-Qg-Sjx">
@@ -92,27 +175,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="idoso" translatesAutoresizingMaskIntoConstraints="NO" id="ygG-uF-qmq">
-                                <rect key="frame" x="67" y="28" width="240" height="128"/>
+                                <rect key="frame" x="16" y="28" width="343" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6dZ-bE-QTr">
-                                <rect key="frame" x="131" y="184" width="97" height="30"/>
+                                <rect key="frame" x="16" y="246" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qyy-Ut-9qd">
-                                <rect key="frame" x="131" y="247" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qyy-Ut-9qd">
+                                <rect key="frame" x="16" y="329" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bN-Vp-HBI">
-                                <rect key="frame" x="156" y="318" width="46" height="30"/>
+                                <rect key="frame" x="16" y="580" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Cadastrar"/>
                                 <connections>
                                     <action selector="registerButton:" destination="5PU-uI-Wh3" eventType="touchUpInside" id="Nwi-4R-XUf"/>
                                 </connections>
@@ -129,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xp-C1-U8S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729" y="-395"/>
+            <point key="canvasLocation" x="722" y="-395"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="14E-Xm-ceY">
@@ -143,12 +227,31 @@
                     <connections>
                         <segue destination="QHe-zz-uYD" kind="relationship" relationship="viewControllers" id="v72-F4-aw7"/>
                         <segue destination="BWT-lH-qIn" kind="relationship" relationship="viewControllers" id="hOR-AG-eX0"/>
-                        <segue destination="cWz-v6-FYd" kind="relationship" relationship="viewControllers" id="VtQ-yA-UPt"/>
+                        <segue destination="jSX-F0-CJF" kind="relationship" relationship="viewControllers" id="VtQ-yA-UPt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UUP-Bf-7wV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-967" y="-68"/>
+            <point key="canvasLocation" x="-1356" y="354"/>
+        </scene>
+        <!--Timeline-->
+        <scene sceneID="F8i-BT-qus">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jSX-F0-CJF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Timeline" id="1rk-fl-iYa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pl2-TH-THd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cWz-v6-FYd" kind="relationship" relationship="rootViewController" id="a94-Hu-X3G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOh-QN-M0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15" y="928"/>
         </scene>
     </scenes>
     <resources>
