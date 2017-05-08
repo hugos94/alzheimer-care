@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FBFD12F1EC0A23A009165EF /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */; };
+		3FFA3E611EC0A6C700A1148E /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA3E601EC0A6C700A1148E /* Memory.swift */; };
+		3FFA3E631EC0A95E00A1148E /* MemoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA3E621EC0A95E00A1148E /* MemoryTableViewCell.swift */; };
+		3FFA3E651EC0B13400A1148E /* MemoryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA3E641EC0B13400A1148E /* MemoryDAO.swift */; };
 		D16805E140C94324F4514DC1 /* Pods_Alzheimer_CareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB93E27C03ECA1D0146C305 /* Pods_Alzheimer_CareTests.framework */; };
 		E623C07AD00A0C7E6D70F923 /* Pods_Alzheimer_Care.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D74CCC5EF1448A23FE3C92 /* Pods_Alzheimer_Care.framework */; };
 		F503637B1EBD662A00ABF756 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F503637A1EBD662A00ABF756 /* HomeViewController.swift */; };
@@ -42,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		3FFA3E601EC0A6C700A1148E /* Memory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
+		3FFA3E621EC0A95E00A1148E /* MemoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryTableViewCell.swift; sourceTree = "<group>"; };
+		3FFA3E641EC0B13400A1148E /* MemoryDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryDAO.swift; sourceTree = "<group>"; };
 		5126C331EAE9282F58C85026 /* Pods-Alzheimer CareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzheimer CareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alzheimer CareUITests/Pods-Alzheimer CareUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6713121D410C730074CB1E82 /* Pods-Alzheimer Care.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzheimer Care.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alzheimer Care/Pods-Alzheimer Care.release.xcconfig"; sourceTree = "<group>"; };
 		832A5B18D65344B3793FAC37 /* Pods-Alzheimer CareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzheimer CareUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alzheimer CareUITests/Pods-Alzheimer CareUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +138,8 @@
 				F503637C1EBD692100ABF756 /* RegisterViewController.swift */,
 				F53118D41EBEC5460035DA11 /* TimelineTableViewController.swift */,
 				F53118D61EBEC5900035DA11 /* ActivitiesViewController.swift */,
+				3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */,
+				3FFA3E621EC0A95E00A1148E /* MemoryTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -148,6 +158,8 @@
 			children = (
 				F5ED00C91EBD59B10085A171 /* Assets.xcassets */,
 				F5ED00C61EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld */,
+				3FFA3E601EC0A6C700A1148E /* Memory.swift */,
+				3FFA3E641EC0B13400A1148E /* MemoryDAO.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -289,6 +301,7 @@
 				TargetAttributes = {
 					F5ED00BB1EBD59B10085A171 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = BVJB8TBR87;
 						ProvisioningStyle = Automatic;
 					};
 					F5ED00D21EBD59B10085A171 = {
@@ -493,11 +506,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FFA3E611EC0A6C700A1148E /* Memory.swift in Sources */,
 				F5ED00C01EBD59B10085A171 /* AppDelegate.swift in Sources */,
+				3FFA3E631EC0A95E00A1148E /* MemoryTableViewCell.swift in Sources */,
 				F5ED00C81EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld in Sources */,
 				F53118D31EBEC19C0035DA11 /* AddMemoryViewController.swift in Sources */,
 				F53118D71EBEC5900035DA11 /* ActivitiesViewController.swift in Sources */,
+				3FBFD12F1EC0A23A009165EF /* ExtensionViewController.swift in Sources */,
 				F503637B1EBD662A00ABF756 /* HomeViewController.swift in Sources */,
+				3FFA3E651EC0B13400A1148E /* MemoryDAO.swift in Sources */,
 				F53118D51EBEC5460035DA11 /* TimelineTableViewController.swift in Sources */,
 				F503637D1EBD692100ABF756 /* RegisterViewController.swift in Sources */,
 			);
@@ -652,6 +669,7 @@
 			baseConfigurationReference = EDE10EB6700C8B99D3E1B70B /* Pods-Alzheimer Care.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BVJB8TBR87;
 				INFOPLIST_FILE = "Alzheimer Care/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackatruck.Alzheimer-Care";
@@ -665,6 +683,7 @@
 			baseConfigurationReference = 6713121D410C730074CB1E82 /* Pods-Alzheimer Care.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BVJB8TBR87;
 				INFOPLIST_FILE = "Alzheimer Care/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hackatruck.Alzheimer-Care";
