@@ -45,6 +45,12 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
     func startRecording() {
         let audioSession = AVAudioSession.sharedInstance()
         do {
+            try audioSession.overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
+        } catch {
+            print("Não foi possivel utilizar o speaker padrão!")
+        }
+        
+        do {
             audioRecorder = try AVAudioRecorder(url: self.directoryURL()! as URL,
                                                 settings: settings)
             audioRecorder.delegate = self
