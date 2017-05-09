@@ -39,8 +39,7 @@ class RegisterViewController: UIViewController {
       present(imagePicker, animated: true, completion: nil)
     } else {
       let alert = UIAlertController(title: "Sem câmera", message: "Desculpe, esse dispositivo não tem câmera", preferredStyle: .alert)
-      let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-      alert.addAction(okAction)
+      alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
       present(alert, animated: true, completion: nil)
     }
   }
@@ -53,22 +52,17 @@ class RegisterViewController: UIViewController {
   }
   
   @IBAction func registerButton(_ sender: Any) {
-    if userNameTextField.text != "" && userNameTextField.text != nil && userNumberTextField.text != "" && userNumberTextField.text != nil {
-      
-      UserDefaults.standard.set(userNumberTextField.text, forKey: "USER_NUMBER")
-      UserDefaults.standard.set(userNameTextField.text, forKey: "USER_NAME")
-      
-      dismiss(animated: true, completion: nil)
-      
-    }else{
-      
+    guard let name = userNameTextField.text, let number = userNumberTextField.text else {
       let alert = UIAlertController(title: "Erro!", message: "Preencha todos os campos :D", preferredStyle: .actionSheet)
-      alert.addAction(UIAlertAction(title: "OK", style: .default) { action in
-        // perhaps use action.title here
-      })
-      
-      self.present(alert, animated: true)
+      alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+      present(alert, animated: true, completion: nil)
+      return
     }
+    
+    UserDefaults.standard.set(number, forKey: "USER_NUMBER")
+    UserDefaults.standard.set(name, forKey: "USER_NAME")
+    
+    dismiss(animated: true, completion: nil)
   }
 }
 
