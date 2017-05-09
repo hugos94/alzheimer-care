@@ -14,6 +14,16 @@ class MemoryTableViewCell: UITableViewCell {
     @IBOutlet weak var memoryDateLabel: UILabel!
     @IBOutlet weak var memoryPlayButton: UIButton!
     
+    var onButtonTapped : (() -> Void)? = nil
+    
+    @IBAction func playButton(_ sender: UIButton) {
+        print(sender.tag)
+        print(memoryNameLabel.text ?? "Deu erro hein!")
+        if let onButtonTapped = self.onButtonTapped {
+            onButtonTapped()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,7 +31,7 @@ class MemoryTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        print("Clicada!")
         // Configure the view for the selected state
     }
 

@@ -7,20 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
 
-class TimelineTableViewController: UITableViewController, MemoryEnteredDelegate {
-    
+class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate, MemoryEnteredDelegate {
     
     var listOfMemories: [Memory] = []
-    var memoryTest = Memory(name: "Casamento da Ana", date: Date.init(), audio: "audio")
-    var memoryTest2 = Memory(name: "Nascimento do Jorge", date: Date.init(), audio: "audio")
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        listOfMemories.append(memoryTest)
-        listOfMemories.append(memoryTest2)
-    }
+    var audioRecorder    :AVAudioRecorder!
+    var audioPlayer : AVAudioPlayer!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -47,11 +41,12 @@ class TimelineTableViewController: UITableViewController, MemoryEnteredDelegate 
         if let memoryCell = cell as? MemoryTableViewCell {
             memoryCell.memoryNameLabel.text = memory.name
             memoryCell.memoryDateLabel.text = memory.getFormattedData()
+            memoryCell.onButtonTapped = {
+            }
         }
         
         return cell
     }
-    
 
     /*
     // Override to support conditional editing of the table view.
@@ -108,6 +103,5 @@ class TimelineTableViewController: UITableViewController, MemoryEnteredDelegate 
     func userDidEnterInformation(memory: Memory) {
         listOfMemories.append(memory)
     }
-    
 
 }

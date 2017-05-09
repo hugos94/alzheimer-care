@@ -55,6 +55,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2B-5V-CJr">
                                                     <rect key="frame" x="312.5" y="0.0" width="46.5" height="61"/>
                                                     <state key="normal" title="Play"/>
+                                                    <connections>
+                                                        <action selector="playButton:" destination="ldG-eh-whN" eventType="touchUpInside" id="dBX-du-TuY"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
