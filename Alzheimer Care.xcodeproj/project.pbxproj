@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FBFD12F1EC0A23A009165EF /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */; };
+		3FDA8B091EC1EBC400B36C55 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8B081EC1EBC400B36C55 /* DataManager.swift */; };
 		3FFA3E611EC0A6C700A1148E /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA3E601EC0A6C700A1148E /* Memory.swift */; };
 		3FFA3E631EC0A95E00A1148E /* MemoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA3E621EC0A95E00A1148E /* MemoryTableViewCell.swift */; };
 		3FFA3E651EC0B13400A1148E /* MemoryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA3E641EC0B13400A1148E /* MemoryDAO.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		3FDA8B081EC1EBC400B36C55 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		3FFA3E601EC0A6C700A1148E /* Memory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
 		3FFA3E621EC0A95E00A1148E /* MemoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryTableViewCell.swift; sourceTree = "<group>"; };
 		3FFA3E641EC0B13400A1148E /* MemoryDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryDAO.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				3FFA3E601EC0A6C700A1148E /* Memory.swift */,
 				3FFA3E641EC0B13400A1148E /* MemoryDAO.swift */,
 				F526004C1EC14C7B004232EF /* Enums.swift */,
+				3FDA8B081EC1EBC400B36C55 /* DataManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FFA3E611EC0A6C700A1148E /* Memory.swift in Sources */,
+				3FDA8B091EC1EBC400B36C55 /* DataManager.swift in Sources */,
 				F5ED00C01EBD59B10085A171 /* AppDelegate.swift in Sources */,
 				3FFA3E631EC0A95E00A1148E /* MemoryTableViewCell.swift in Sources */,
 				F5ED00C81EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld in Sources */,
