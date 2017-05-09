@@ -45,10 +45,6 @@ class PhysicalActivityTableViewController: UITableViewController {
             
             physicalActivityCell.nameLabel.text = physicalActivity.name
             
-            print(physicalActivity.name)
-            
-            //physicalActivityCell.nameLabel.text = physicalActivity.name
-            
             var frequency = "\(physicalActivity.time) - "
             
             for day in physicalActivity.frequency {
@@ -70,8 +66,8 @@ class PhysicalActivityTableViewController: UITableViewController {
         
         // Configure the trigger for a 7am wakeup.
         var dateInfo = DateComponents()
-        dateInfo.hour = 11
-        dateInfo.minute = 50
+        dateInfo.hour = 22
+        dateInfo.minute = 18
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateInfo, repeats: false)
         
         // Create the request object.

@@ -18,6 +18,7 @@
 		F52600461EC139EC004232EF /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52600451EC139EC004232EF /* Activity.swift */; };
 		F52600481EC13A74004232EF /* PhysicalActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52600471EC13A74004232EF /* PhysicalActivityTableViewCell.swift */; };
 		F526004A1EC13A8E004232EF /* PhysicalActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52600491EC13A8E004232EF /* PhysicalActivityTableViewController.swift */; };
+		F526004D1EC14C7B004232EF /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F526004C1EC14C7B004232EF /* Enums.swift */; };
 		F53118D31EBEC19C0035DA11 /* AddMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53118D21EBEC19C0035DA11 /* AddMemoryViewController.swift */; };
 		F53118D51EBEC5460035DA11 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53118D41EBEC5460035DA11 /* TimelineTableViewController.swift */; };
 		F53118D71EBEC5900035DA11 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53118D61EBEC5900035DA11 /* ActivitiesViewController.swift */; };
@@ -66,6 +67,7 @@
 		F52600451EC139EC004232EF /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		F52600471EC13A74004232EF /* PhysicalActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalActivityTableViewCell.swift; sourceTree = "<group>"; };
 		F52600491EC13A8E004232EF /* PhysicalActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalActivityTableViewController.swift; sourceTree = "<group>"; };
+		F526004C1EC14C7B004232EF /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		F53118D21EBEC19C0035DA11 /* AddMemoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemoryViewController.swift; sourceTree = "<group>"; };
 		F53118D41EBEC5460035DA11 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 		F53118D61EBEC5900035DA11 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				F5ED00C61EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld */,
 				3FFA3E601EC0A6C700A1148E /* Memory.swift */,
 				3FFA3E641EC0B13400A1148E /* MemoryDAO.swift */,
+				F526004C1EC14C7B004232EF /* Enums.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				3FBFD12F1EC0A23A009165EF /* ExtensionViewController.swift in Sources */,
 				F503637B1EBD662A00ABF756 /* HomeViewController.swift in Sources */,
 				F52600481EC13A74004232EF /* PhysicalActivityTableViewCell.swift in Sources */,
+				F526004D1EC14C7B004232EF /* Enums.swift in Sources */,
 				3FFA3E651EC0B13400A1148E /* MemoryDAO.swift in Sources */,
 				F526004A1EC13A8E004232EF /* PhysicalActivityTableViewController.swift in Sources */,
 				F53118D51EBEC5460035DA11 /* TimelineTableViewController.swift in Sources */,

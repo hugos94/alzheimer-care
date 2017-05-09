@@ -10,46 +10,31 @@ import UIKit
 
 class TimelineTableViewController: UITableViewController, MemoryEnteredDelegate {
     
-    let dateFormatter = DateFormatter()
+    
     var listOfMemories: [Memory] = []
-    var memoryTest = Memory(name: "Teste", date: Date.init(), audio: "audio")
-    var memoryTest2 = Memory(name: "Teste2", date: Date.init(), audio: "audio")
+    var memoryTest = Memory(name: "Casamento da Ana", date: Date.init(), audio: "audio")
+    var memoryTest2 = Memory(name: "Nascimento do Jorge", date: Date.init(), audio: "audio")
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         listOfMemories.append(memoryTest)
         listOfMemories.append(memoryTest2)
-        
-        dateFormatter.dateFormat = "EEE, dd MMM yyy - hh:mm:ss"
-
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        tableView?.reloadData()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return listOfMemories.count
     }
 
@@ -61,7 +46,7 @@ class TimelineTableViewController: UITableViewController, MemoryEnteredDelegate 
         
         if let memoryCell = cell as? MemoryTableViewCell {
             memoryCell.memoryNameLabel.text = memory.name
-            memoryCell.memoryDateLabel.text = dateFormatter.string(from: memory.date)
+            memoryCell.memoryDateLabel.text = memory.getFormattedData()
         }
         
         return cell
@@ -111,9 +96,13 @@ class TimelineTableViewController: UITableViewController, MemoryEnteredDelegate 
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if segue.identifier == "addMemorySegue" {
-            let addMemoryViewController = segue.destination as! AddMemoryViewController
-            addMemoryViewController.delegate = self
+            if let addNavigationController = segue.destination as? UINavigationController {
+                if let addMemoryViewController: AddMemoryViewController = addNavigationController.viewControllers.first as? AddMemoryViewController {
+                    addMemoryViewController.delegate = self
+                }
+            }
         }
+        
     }
     
     func userDidEnterInformation(memory: Memory) {

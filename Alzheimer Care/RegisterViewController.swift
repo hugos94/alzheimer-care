@@ -10,9 +10,13 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     
+    // MARK: - Properties
+    
     @IBOutlet weak var userPhotoImageView: UIImageView!
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var userNumberTextField: UITextField!
+    
+    // MARK: - Actions
     
     @IBAction func registerButton(_ sender: Any) {
         if userNameTextField.text != "" && userNameTextField.text != nil && userNumberTextField.text != "" && userNumberTextField.text != nil {
@@ -32,7 +36,9 @@ class RegisterViewController: UIViewController {
             self.present(alert, animated: true)
         }
     }
-        
+    
+    // MARK: - System Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()

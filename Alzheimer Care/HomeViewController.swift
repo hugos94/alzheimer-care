@@ -14,11 +14,13 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var initialInformationTextView: UITextView!
     
+    // MARK: - Actions
+    
     @IBAction func makeEmergencyCall(_ sender: Any) {
         
         let phoneNumber = UserDefaults.standard.string(forKey: "USER_NUMBER")
         
-        print("FAZENDO LIGAÇÃO PARA \(phoneNumber!) \n")
+        print("Ligando para \(phoneNumber!)!")
         
         if let phoneCallURL = URL(string: "tel://\(phoneNumber!)") {
             
@@ -28,6 +30,8 @@ class HomeViewController: UIViewController {
             }
         }
     }
+    
+    // MARK: - System Functions
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

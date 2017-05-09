@@ -16,7 +16,7 @@ protocol MemoryEnteredDelegate: class {
 
 class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
     
-    // MARK: Properties
+    // MARK: - Properties
     var recordingSession : AVAudioSession!
     var audioRecorder    :AVAudioRecorder!
     var settings         = [String : Int]()
@@ -164,15 +164,20 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
     @IBAction func returnButton(_ sender: Any) {
         navigationController?.dismiss(animated: true, completion: nil)
     }
-    @IBAction func addMemoryButton(_ sender: Any) {
-        let actualDate = Date()
-        let audioName = "\(actualDate.description).m4a"
-        let memory = Memory(name: nameMemoryTextField.text!, date: actualDate, audio: audioName)
-        
-        // call this method on whichever class implements our delegate protocol
-        delegate?.userDidEnterInformation(memory: memory)
-        
-        navigationController?.dismiss(animated: true, completion: nil)
+    
+    @IBAction func saveMemoryButton(_ sender: Any) {
+            if delegate != nil {
+            let actualDate = Date()
+            let audioName = "\(actualDate.description).m4a"
+            let memory = Memory(name: nameMemoryTextField.text!, date: actualDate, audio: audioName)
+            
+            // call this method on whichever class implements our delegate protocol
+            delegate?.userDidEnterInformation(memory: memory)
+            
+            navigationController?.dismiss(animated: true, completion: nil)
+        }else{
+            print("delegate ta nil")
+        }
     }
-
+        
 }

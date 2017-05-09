@@ -8,18 +8,6 @@
 
 import Foundation
 
-enum DayOfWeek : String {
-    
-    case Sunday = "Domingo"
-    case Monday = "Segunda"
-    case Tuesday = "Terça"
-    case Wednesday = "Quarta"
-    case Thursday = "Quinta"
-    case Friday = "Sexta"
-    case Saturday = "Sábado"
-    
-}
-
 class Activity {
     
     let name : String
