@@ -310,19 +310,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="idoso" translatesAutoresizingMaskIntoConstraints="NO" id="ygG-uF-qmq">
-                                <rect key="frame" x="16" y="28" width="343" height="185"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idoso" translatesAutoresizingMaskIntoConstraints="NO" id="ygG-uF-qmq">
+                                <rect key="frame" x="16" y="36" width="343" height="250"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6dZ-bE-QTr">
-                                <rect key="frame" x="16" y="246" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qyy-Ut-9qd">
-                                <rect key="frame" x="16" y="329" width="343" height="30"/>
+                                <rect key="frame" x="16" y="427" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -337,8 +329,38 @@
                                     <action selector="registerButton:" destination="5PU-uI-Wh3" eventType="touchUpInside" id="Nwi-4R-XUf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmP-7h-kyO">
+                                <rect key="frame" x="16" y="302" width="95" height="30"/>
+                                <state key="normal" title="Capturar Foto"/>
+                                <connections>
+                                    <action selector="capture:" destination="5PU-uI-Wh3" eventType="touchUpInside" id="rbU-YG-kcZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nok-0p-Fnz">
+                                <rect key="frame" x="264" y="302" width="95" height="30"/>
+                                <state key="normal" title="Carregar Foto"/>
+                                <connections>
+                                    <action selector="load:" destination="5PU-uI-Wh3" eventType="touchUpInside" id="T8f-Wr-hHG"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6dZ-bE-QTr">
+                                <rect key="frame" x="16" y="389" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nok-0p-Fnz" secondAttribute="trailing" id="93A-cH-nBX"/>
+                            <constraint firstItem="ygG-uF-qmq" firstAttribute="leading" secondItem="3yd-0i-I7X" secondAttribute="leadingMargin" id="NAO-kz-agI"/>
+                            <constraint firstItem="ygG-uF-qmq" firstAttribute="trailing" secondItem="3yd-0i-I7X" secondAttribute="trailingMargin" id="NEW-pC-tcL"/>
+                            <constraint firstItem="VmP-7h-kyO" firstAttribute="top" secondItem="ygG-uF-qmq" secondAttribute="bottom" constant="16" id="RfB-cX-Xxa"/>
+                            <constraint firstItem="VmP-7h-kyO" firstAttribute="leading" secondItem="3yd-0i-I7X" secondAttribute="leadingMargin" id="aNg-YZ-WdR"/>
+                            <constraint firstItem="Nok-0p-Fnz" firstAttribute="top" secondItem="ygG-uF-qmq" secondAttribute="bottom" constant="16" id="ikK-Y6-gBg"/>
+                            <constraint firstItem="ygG-uF-qmq" firstAttribute="top" secondItem="3w9-M7-ypy" secondAttribute="bottom" constant="16" id="uJw-xq-XL1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="T7f-EX-aHS"/>
                     <connections>
