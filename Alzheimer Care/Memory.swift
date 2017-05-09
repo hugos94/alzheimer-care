@@ -12,10 +12,10 @@ class Memory {
     let name: String
     let date: Date
     let dateFormatter = DateFormatter()
-    var audio: String
+    var audio: NSURL
     var formattedDate: String = ""
     
-    init(name: String, date: Date, audio: String) {
+    init(name: String, date: Date, audio: NSURL) {
         
         self.name = name
         self.date = date
