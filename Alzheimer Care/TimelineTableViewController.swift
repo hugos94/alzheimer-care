@@ -10,17 +10,7 @@ import UIKit
 
 class TimelineTableViewController: UITableViewController, MemoryEnteredDelegate {
     
-    
     var listOfMemories: [Memory] = []
-    var memoryTest = Memory(name: "Casamento da Ana", date: Date.init(), audio: "audio")
-    var memoryTest2 = Memory(name: "Nascimento do Jorge", date: Date.init(), audio: "audio")
-    
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        listOfMemories.append(memoryTest)
-        listOfMemories.append(memoryTest2)
-    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
