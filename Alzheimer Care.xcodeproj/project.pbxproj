@@ -15,6 +15,9 @@
 		E623C07AD00A0C7E6D70F923 /* Pods_Alzheimer_Care.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D74CCC5EF1448A23FE3C92 /* Pods_Alzheimer_Care.framework */; };
 		F503637B1EBD662A00ABF756 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F503637A1EBD662A00ABF756 /* HomeViewController.swift */; };
 		F503637D1EBD692100ABF756 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F503637C1EBD692100ABF756 /* RegisterViewController.swift */; };
+		F52600461EC139EC004232EF /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52600451EC139EC004232EF /* Activity.swift */; };
+		F52600481EC13A74004232EF /* PhysicalActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52600471EC13A74004232EF /* PhysicalActivityTableViewCell.swift */; };
+		F526004A1EC13A8E004232EF /* PhysicalActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52600491EC13A8E004232EF /* PhysicalActivityTableViewController.swift */; };
 		F53118D31EBEC19C0035DA11 /* AddMemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53118D21EBEC19C0035DA11 /* AddMemoryViewController.swift */; };
 		F53118D51EBEC5460035DA11 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53118D41EBEC5460035DA11 /* TimelineTableViewController.swift */; };
 		F53118D71EBEC5900035DA11 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53118D61EBEC5900035DA11 /* ActivitiesViewController.swift */; };
@@ -60,6 +63,9 @@
 		F1C73F77A6B95E5DD4808BE4 /* Pods-Alzheimer CareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzheimer CareTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alzheimer CareTests/Pods-Alzheimer CareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F503637A1EBD662A00ABF756 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F503637C1EBD692100ABF756 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F52600451EC139EC004232EF /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		F52600471EC13A74004232EF /* PhysicalActivityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalActivityTableViewCell.swift; sourceTree = "<group>"; };
+		F52600491EC13A8E004232EF /* PhysicalActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalActivityTableViewController.swift; sourceTree = "<group>"; };
 		F53118D21EBEC19C0035DA11 /* AddMemoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMemoryViewController.swift; sourceTree = "<group>"; };
 		F53118D41EBEC5460035DA11 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
 		F53118D61EBEC5900035DA11 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +146,8 @@
 				F53118D61EBEC5900035DA11 /* ActivitiesViewController.swift */,
 				3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */,
 				3FFA3E621EC0A95E00A1148E /* MemoryTableViewCell.swift */,
+				F52600471EC13A74004232EF /* PhysicalActivityTableViewCell.swift */,
+				F52600491EC13A8E004232EF /* PhysicalActivityTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -156,6 +164,7 @@
 		F58FAA021EBE8E4E00BC31D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F52600451EC139EC004232EF /* Activity.swift */,
 				F5ED00C91EBD59B10085A171 /* Assets.xcassets */,
 				F5ED00C61EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld */,
 				3FFA3E601EC0A6C700A1148E /* Memory.swift */,
@@ -512,9 +521,12 @@
 				F5ED00C81EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld in Sources */,
 				F53118D31EBEC19C0035DA11 /* AddMemoryViewController.swift in Sources */,
 				F53118D71EBEC5900035DA11 /* ActivitiesViewController.swift in Sources */,
+				F52600461EC139EC004232EF /* Activity.swift in Sources */,
 				3FBFD12F1EC0A23A009165EF /* ExtensionViewController.swift in Sources */,
 				F503637B1EBD662A00ABF756 /* HomeViewController.swift in Sources */,
+				F52600481EC13A74004232EF /* PhysicalActivityTableViewCell.swift in Sources */,
 				3FFA3E651EC0B13400A1148E /* MemoryDAO.swift in Sources */,
+				F526004A1EC13A8E004232EF /* PhysicalActivityTableViewController.swift in Sources */,
 				F53118D51EBEC5460035DA11 /* TimelineTableViewController.swift in Sources */,
 				F503637D1EBD692100ABF756 /* RegisterViewController.swift in Sources */,
 			);
