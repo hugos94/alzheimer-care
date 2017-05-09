@@ -166,8 +166,8 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
         let fileManager = FileManager.default
         let urls = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
         let documentDirectory = urls[0] as NSURL
-        soundURL = documentDirectory.appendingPathComponent(audioName)
-        return soundURL as NSURL?
+        let soundURL = documentDirectory.appendingPathComponent(audioName) as NSURL?
+        return soundURL
     }
     
     // MARK: - Actions
