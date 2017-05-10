@@ -74,11 +74,10 @@ class RegisterViewController: UIViewController {
   }
   
   @IBAction func registerButton(_ sender: Any) {
-    guard let name = userNameTextField.text, let number = userNumberTextField.text else {
+    guard let name = userNameTextField.text, let number = userNumberTextField.text, !name.isEmpty, !number.isEmpty else {
       let alert = UIAlertController(title: "Erro!", message: "Preencha todos os campos :D", preferredStyle: .actionSheet)
       alert.addAction(OKButton())
-      present(alert, animated: true, completion: nil)
-      return
+      return present(alert, animated: true, completion: nil)
     }
     UserDefaults.standard.set(number, forKey: "USER_NUMBER")
     UserDefaults.standard.set(name, forKey: "USER_NAME")
