@@ -24,33 +24,33 @@ class RegisterViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     self.setupUI()
   }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        registerForNotifications()
-        
-    }
+    registerForNotifications()
+  }
+  
+  func registerForNotifications() {
+    // Defina o tipo de notificações que você quer permitir
+    let notificationTypes: UNAuthorizationOptions = [.sound, .alert, .badge]
     
-    func registerForNotifications() {
-        // Defina o tipo de notificações que você quer permitir
-        let notificationTypes: UNAuthorizationOptions = [.sound, .alert, .badge]
-        
-        // Utilizamos o notification center para solicitar autorização
-        let notificationCenter = UNUserNotificationCenter.current()
-        
-        // Solicitamos autorização
-        notificationCenter.requestAuthorization(options: notificationTypes) {
-            (granted, error) in
-            if granted {
-                print("Autorização concedida :D")
-            } else {
-                print("Autorização negada :(")
-            }
-        }
+    // Utilizamos o notification center para solicitar autorização
+    let notificationCenter = UNUserNotificationCenter.current()
+    
+    // Solicitamos autorização
+    notificationCenter.requestAuthorization(options: notificationTypes) {
+      (granted, error) in
+      if granted {
+        print("Autorização concedida :D")
+      } else {
+        print("Autorização negada :(")
+      }
     }
+  }
   
   // MARK: - Actions
   
@@ -97,6 +97,8 @@ class RegisterViewController: UIViewController {
     self.profilePicture.layer.borderColor = UIColor.black.cgColor
     self.profilePicture.layer.cornerRadius = self.profilePicture.frame.height / 2
     self.profilePicture.clipsToBounds = true
+    
+    self.userNumberTextField.keyboardType = .phonePad
   }
   
   private func OKButton() -> UIAlertAction {
