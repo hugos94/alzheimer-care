@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idoso" translatesAutoresizingMaskIntoConstraints="NO" id="ygG-uF-qmq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="ygG-uF-qmq">
                                 <rect key="frame" x="59.5" y="36" width="256" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ygG-uF-qmq" secondAttribute="height" multiplier="1:1" id="aSV-hN-5iT"/>
@@ -100,6 +100,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="idoso" width="350" height="250"/>
+        <image name="user" width="210" height="210"/>
     </resources>
 </document>
