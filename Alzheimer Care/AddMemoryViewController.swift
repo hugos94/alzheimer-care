@@ -15,7 +15,7 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
     
     weak var delegate: MemoryEnteredDelegate? = nil
     
-    var actualDate: Date = Date()
+    var actualDate: NSDate!
     var soundURL: NSURL = NSURL()
     var audioName: String = ""
     
@@ -39,7 +39,7 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
         
         playButton.isHidden = true
         
-        actualDate = Date()
+        actualDate = NSDate()
         
         audioName = "\(actualDate.description).m4a"
         
@@ -178,12 +178,22 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
     
     @IBAction func saveMemoryButton(_ sender: Any) {
         if delegate != nil {
-            let memory = Memory(name: nameMemoryTextField.text!, date: actualDate, audio: audioRecorder.url as NSURL)
+            let memory = Memory()
+            memory.name = nameMemoryTextField.text!
+            memory.date = actualDate
+            memory.url = String(describing: audioRecorder.url)
+
+            if MemoryDAO.insertion(memory: memory) {
+                print("A memória \(memory.name!) foi inserida com sucesso!")
+            } else {
+                print("Não foi possível inserir a memória \(memory.name!)!")
+            }
             
             // call this method on whichever class implements our delegate protocol
             delegate?.userDidEnterInformation(memory: memory)
             
             navigationController?.dismiss(animated: true, completion: nil)
+            
         }
     }
         

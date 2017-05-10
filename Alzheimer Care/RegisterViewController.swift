@@ -14,7 +14,7 @@ class RegisterViewController: UIViewController {
   
   // MARK: - Properties
   
-  @IBOutlet weak var userPhotoImageView: UIImageView!
+  @IBOutlet weak var profilePicture: UIImageView!
   @IBOutlet weak var userNameTextField: UITextField!
   @IBOutlet weak var userNumberTextField: UITextField!
   
@@ -24,36 +24,33 @@ class RegisterViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.hideKeyboardWhenTappedAround()
     
-    self.imagePicker.delegate = self
-    self.imagePicker.allowsEditing = false
+    self.setupUI()
   }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        registerForNotifications()
-        
-    }
+    registerForNotifications()
+  }
+  
+  func registerForNotifications() {
+    // Defina o tipo de notificações que você quer permitir
+    let notificationTypes: UNAuthorizationOptions = [.sound, .alert, .badge]
     
-    func registerForNotifications() {
-        // Defina o tipo de notificações que você quer permitir
-        let notificationTypes: UNAuthorizationOptions = [.sound, .alert, .badge]
-        
-        // Utilizamos o notification center para solicitar autorização
-        let notificationCenter = UNUserNotificationCenter.current()
-        
-        // Solicitamos autorização
-        notificationCenter.requestAuthorization(options: notificationTypes) {
-            (granted, error) in
-            if granted {
-                print("Autorização concedida :D")
-            } else {
-                print("Autorização negada :(")
-            }
-        }
+    // Utilizamos o notification center para solicitar autorização
+    let notificationCenter = UNUserNotificationCenter.current()
+    
+    // Solicitamos autorização
+    notificationCenter.requestAuthorization(options: notificationTypes) {
+      (granted, error) in
+      if granted {
+        print("Autorização concedida :D")
+      } else {
+        print("Autorização negada :(")
+      }
     }
+  }
   
   // MARK: - Actions
   
@@ -77,16 +74,30 @@ class RegisterViewController: UIViewController {
   }
   
   @IBAction func registerButton(_ sender: Any) {
-    guard let name = userNameTextField.text, let number = userNumberTextField.text else {
+    guard let name = userNameTextField.text, let number = userNumberTextField.text, !name.isEmpty, !number.isEmpty else {
       let alert = UIAlertController(title: "Erro!", message: "Preencha todos os campos :D", preferredStyle: .actionSheet)
       alert.addAction(OKButton())
-      present(alert, animated: true, completion: nil)
-      return
+      return present(alert, animated: true, completion: nil)
     }
     UserDefaults.standard.set(number, forKey: "USER_NUMBER")
     UserDefaults.standard.set(name, forKey: "USER_NAME")
     
     dismiss(animated: true, completion: nil)
+  }
+  
+  private func setupUI() {
+    self.hideKeyboardWhenTappedAround()
+    
+    self.imagePicker.delegate = self
+    self.imagePicker.allowsEditing = false
+    
+    self.profilePicture.layer.borderWidth = 1
+    self.profilePicture.layer.masksToBounds = false
+    self.profilePicture.layer.borderColor = UIColor.black.cgColor
+    self.profilePicture.layer.cornerRadius = self.profilePicture.frame.height / 2
+    self.profilePicture.clipsToBounds = true
+    
+    self.userNumberTextField.keyboardType = .phonePad
   }
   
   private func OKButton() -> UIAlertAction {
@@ -97,11 +108,11 @@ class RegisterViewController: UIViewController {
 extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
     if let pickedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
-      userPhotoImageView.contentMode = .scaleAspectFit
-      userPhotoImageView.image = pickedImage
+      profilePicture.contentMode = .scaleAspectFit
+      profilePicture.image = pickedImage
     } else if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-      userPhotoImageView.contentMode = .scaleAspectFit
-      userPhotoImageView.image = pickedImage
+      profilePicture.contentMode = .scaleAspectFit
+      profilePicture.image = pickedImage
     } else {
       print("Failed to convert image for some reason")
     }

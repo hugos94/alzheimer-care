@@ -11,5 +11,12 @@ import CoreData
 
 
 public class ProfilePicture: NSManagedObject {
-
+  public static let entityName = "ProfilePicture"
+  
+  convenience init() {
+    let context = DataManager.context
+    let entity = NSEntityDescription.entity(forEntityName: ProfilePicture.entityName, in: context)!
+    
+    self.init(entity: entity, insertInto: context)
+  }
 }

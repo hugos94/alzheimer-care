@@ -57,4 +57,32 @@ public class DataManager {
       }
     }
   }
+  
+  static func insert(_ object: NSManagedObject) -> Bool {
+    var result = false
+    
+    context.insert(object)
+    do {
+      try context.save()
+      result = true
+    } catch let error {
+      print("Insert error, something bad happened: \(error.localizedDescription)")
+    }
+    
+    return result
+  }
+  
+  static func delete(_ object: NSManagedObject) -> Bool {
+    var result = false
+    
+    context.delete(object)
+    do {
+      try context.save()
+      result = true
+    } catch let error {
+      print("Delete error, something bad happened: \(error.localizedDescription)")
+    }
+    
+    return result
+  }
 }
