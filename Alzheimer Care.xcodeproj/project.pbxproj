@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F5E608A1EC33FBD00B77709 /* PhysicalActivityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E60891EC33FBD00B77709 /* PhysicalActivityDetailsViewController.swift */; };
 		3FBFD12F1EC0A23A009165EF /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */; };
 		3FCA917B1EC334D700F6AE29 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA917A1EC334D700F6AE29 /* Register.storyboard */; };
 		3FDA8B091EC1EBC400B36C55 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8B081EC1EBC400B36C55 /* DataManager.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F5E60891EC33FBD00B77709 /* PhysicalActivityDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalActivityDetailsViewController.swift; sourceTree = "<group>"; };
 		3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		3FCA917A1EC334D700F6AE29 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		3FDA8B081EC1EBC400B36C55 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				F53118D61EBEC5900035DA11 /* ActivitiesViewController.swift */,
 				F52600471EC13A74004232EF /* PhysicalActivityTableViewCell.swift */,
 				F52600491EC13A8E004232EF /* PhysicalActivityTableViewController.swift */,
+				3F5E60891EC33FBD00B77709 /* PhysicalActivityDetailsViewController.swift */,
 			);
 			name = Activities;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 				3FDA8B101EC1EDAA00B36C55 /* ProfilePicture+CoreDataClass.swift in Sources */,
 				F53118D71EBEC5900035DA11 /* ActivitiesViewController.swift in Sources */,
 				F52600461EC139EC004232EF /* Activity.swift in Sources */,
+				3F5E608A1EC33FBD00B77709 /* PhysicalActivityDetailsViewController.swift in Sources */,
 				3FDA8B0F1EC1EDAA00B36C55 /* User+CoreDataProperties.swift in Sources */,
 				3FDA8B0E1EC1EDAA00B36C55 /* User+CoreDataClass.swift in Sources */,
 				3FBFD12F1EC0A23A009165EF /* ExtensionViewController.swift in Sources */,
