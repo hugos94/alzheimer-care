@@ -211,12 +211,12 @@
 		F58FAA021EBE8E4E00BC31D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F5ED00C61EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld */,
 				3FDA8B0A1EC1EDAA00B36C55 /* User+CoreDataClass.swift */,
 				3FDA8B0B1EC1EDAA00B36C55 /* User+CoreDataProperties.swift */,
 				3FDA8B0C1EC1EDAA00B36C55 /* ProfilePicture+CoreDataClass.swift */,
 				3FDA8B0D1EC1EDAA00B36C55 /* ProfilePicture+CoreDataProperties.swift */,
 				F52600451EC139EC004232EF /* Activity.swift */,
-				F5ED00C61EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld */,
 				3FFA3E601EC0A6C700A1148E /* Memory.swift */,
 				3FFA3E641EC0B13400A1148E /* MemoryDAO.swift */,
 				F526004C1EC14C7B004232EF /* Enums.swift */,
@@ -260,10 +260,10 @@
 			isa = PBXGroup;
 			children = (
 				F5ED00C91EBD59B10085A171 /* Assets.xcassets */,
+				F58FAA021EBE8E4E00BC31D2 /* Models */,
+				F58FAA011EBE8E4000BC31D2 /* Views */,
 				F58FAA001EBE8E2F00BC31D2 /* Controllers */,
 				F58FAA031EBE8E5600BC31D2 /* Supporting Files */,
-				F58FAA011EBE8E4000BC31D2 /* Views */,
-				F58FAA021EBE8E4E00BC31D2 /* Models */,
 			);
 			path = "Alzheimer Care";
 			sourceTree = "<group>";
