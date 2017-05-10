@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FBFD12F1EC0A23A009165EF /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */; };
+		3FCA917B1EC334D700F6AE29 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA917A1EC334D700F6AE29 /* Register.storyboard */; };
 		3FDA8B091EC1EBC400B36C55 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8B081EC1EBC400B36C55 /* DataManager.swift */; };
 		3FDA8B0E1EC1EDAA00B36C55 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8B0A1EC1EDAA00B36C55 /* User+CoreDataClass.swift */; };
 		3FDA8B0F1EC1EDAA00B36C55 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8B0B1EC1EDAA00B36C55 /* User+CoreDataProperties.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		3FCA917A1EC334D700F6AE29 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		3FDA8B081EC1EBC400B36C55 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		3FDA8B0A1EC1EDAA00B36C55 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3FDA8B0B1EC1EDAA00B36C55 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				F5ED00C31EBD59B10085A171 /* Main.storyboard */,
+				3FCA917A1EC334D700F6AE29 /* Register.storyboard */,
 				F5ED00CB1EBD59B10085A171 /* LaunchScreen.storyboard */,
 			);
 			name = Views;
@@ -403,6 +406,7 @@
 				F5ED00CD1EBD59B10085A171 /* LaunchScreen.storyboard in Resources */,
 				F5ED00CA1EBD59B10085A171 /* Assets.xcassets in Resources */,
 				F5ED00C51EBD59B10085A171 /* Main.storyboard in Resources */,
+				3FCA917B1EC334D700F6AE29 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
