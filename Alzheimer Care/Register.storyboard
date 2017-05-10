@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5PU-uI-Wh3">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,24 +20,24 @@
                         <viewControllerLayoutGuide type="bottom" id="gV8-Ft-kI8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3yd-0i-I7X">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="ygG-uF-qmq">
-                                <rect key="frame" x="59.5" y="36" width="256" height="256"/>
+                                <rect key="frame" x="79" y="36" width="256" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ygG-uF-qmq" secondAttribute="height" multiplier="1:1" id="aSV-hN-5iT"/>
                                     <constraint firstAttribute="height" constant="256" id="dhr-3Q-MtW"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qyy-Ut-9qd">
-                                <rect key="frame" x="16" y="392" width="343" height="30"/>
+                                <rect key="frame" x="20" y="392" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bN-Vp-HBI">
-                                <rect key="frame" x="16" y="572" width="343" height="30"/>
+                                <rect key="frame" x="20" y="641" width="374" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Cadastrar"/>
                                 <connections>
@@ -45,20 +45,20 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nok-0p-Fnz">
-                                <rect key="frame" x="264" y="308" width="95" height="30"/>
+                                <rect key="frame" x="299" y="308" width="95" height="30"/>
                                 <state key="normal" title="Carregar Foto"/>
                                 <connections>
                                     <action selector="load:" destination="5PU-uI-Wh3" eventType="touchUpInside" id="T8f-Wr-hHG"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6dZ-bE-QTr">
-                                <rect key="frame" x="16" y="354" width="343" height="30"/>
+                                <rect key="frame" x="20" y="354" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmP-7h-kyO">
-                                <rect key="frame" x="16" y="308" width="95" height="30"/>
+                                <rect key="frame" x="20" y="308" width="95" height="30"/>
                                 <state key="normal" title="Capturar Foto"/>
                                 <connections>
                                     <action selector="capture:" destination="5PU-uI-Wh3" eventType="touchUpInside" id="rbU-YG-kcZ"/>
