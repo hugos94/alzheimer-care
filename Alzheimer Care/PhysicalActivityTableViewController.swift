@@ -133,24 +133,6 @@ class PhysicalActivityTableViewController: UITableViewController {
      center.add(request)
      } */
     
-    func registerForNotifications() {
-        // Defina o tipo de notificações que você quer permitir
-        let notificationTypes: UNAuthorizationOptions = [.sound, .alert, .badge]
-        
-        // Utilizamos o notification center para solicitar autorização
-        let notificationCenter = UNUserNotificationCenter.current()
-        
-        // Solicitamos autorização
-        notificationCenter.requestAuthorization(options: notificationTypes) {
-            (granted, error) in
-            if granted {
-                print("Autorização concedida :D")
-            } else {
-                print("Autorização negada :(")
-            }
-        }
-    }
-    
     func scheduleNotificationTo10SecondsFromNow(repeating: Bool) {
         
         // Defina o conteúdo da notificação
