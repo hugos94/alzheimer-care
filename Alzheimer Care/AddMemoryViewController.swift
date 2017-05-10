@@ -15,7 +15,7 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
     
     weak var delegate: MemoryEnteredDelegate? = nil
     
-    var actualDate: Date = Date()
+    var actualDate: NSDate!
     var soundURL: NSURL = NSURL()
     var audioName: String = ""
     
@@ -39,7 +39,7 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
         
         playButton.isHidden = true
         
-        actualDate = Date()
+        actualDate = NSDate()
         
         audioName = "\(actualDate.description).m4a"
         
@@ -178,12 +178,25 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
     
     @IBAction func saveMemoryButton(_ sender: Any) {
         if delegate != nil {
-            let memory = Memory(name: nameMemoryTextField.text!, date: actualDate, audio: audioRecorder.url as NSURL)
+//            let memory = Memory()
+//            memory.name = nameMemoryTextField.text!
+//            memory.date = actualDate
+//            print("Olha como ficou: ")
+//            print(audioRecorder.url)
+//            print(memory.url ?? "Deu erro no olha como ficou")
+//            memory.url = String(describing: audioRecorder.url)
+//            
+//            if MemoryDAO.insertion(memory: memory) {
+//                print("O filme \(memory.name!) foi inserido com sucesso!")
+//            } else {
+//                print("Não foi possível inserir o filme \(memory.name!)!")
+//            }
+//            
+//            // call this method on whichever class implements our delegate protocol
+//            delegate?.userDidEnterInformation(memory: memory)
+//            
+//            navigationController?.dismiss(animated: true, completion: nil)
             
-            // call this method on whichever class implements our delegate protocol
-            delegate?.userDidEnterInformation(memory: memory)
-            
-            navigationController?.dismiss(animated: true, completion: nil)
         }
     }
         

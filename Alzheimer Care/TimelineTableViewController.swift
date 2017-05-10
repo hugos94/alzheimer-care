@@ -18,16 +18,24 @@ class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate,
     var settings         = [String : Int]()
     var audioPlayer : AVAudioPlayer!
     
+    func updateList() {
+        listOfMemories = MemoryDAO.getMemories()
+    }
+    
     // MARK: - System Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateList()
         
         startSession()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        updateList()
         
         tableView.reloadData()
     }
@@ -50,9 +58,9 @@ class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate,
         
         if let memoryCell = cell as? MemoryTableViewCell {
             memoryCell.memoryNameLabel.text = memory.name
-            memoryCell.memoryDateLabel.text = memory.getFormattedData()
+            memoryCell.memoryDateLabel.text = MemoryDAO.getFormattedData(date: memory.date as! Date)
             memoryCell.onButtonTapped = {
-                self.audioPlayer = try! AVAudioPlayer(contentsOf: memory.url as URL)
+                self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(string: memory.url!)!)
                 self.audioPlayer.prepareToPlay()
                 self.audioPlayer.delegate = self
                 self.audioPlayer.play()
@@ -64,8 +72,10 @@ class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate,
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            listOfMemories.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            if MemoryDAO.delete(memory: listOfMemories[indexPath.row]){
+                updateList()
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
         }
     }
     
