@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1212" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Memory" representedClassName=".Memory" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="ProfilePicture" representedClassName=".ProfilePicture" syncable="YES">
         <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="picture" inverseEntity="User" syncable="YES"/>
@@ -12,5 +17,6 @@
     <elements>
         <element name="ProfilePicture" positionX="-54" positionY="9" width="128" height="75"/>
         <element name="User" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Memory" positionX="-63" positionY="18" width="128" height="90"/>
     </elements>
 </model>
