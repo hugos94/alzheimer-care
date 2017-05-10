@@ -15,8 +15,8 @@
         <relationship name="picture" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProfilePicture" inverseName="user" inverseEntity="ProfilePicture" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Memory" positionX="-63" positionY="18" width="128" height="90"/>
         <element name="ProfilePicture" positionX="-54" positionY="9" width="128" height="75"/>
         <element name="User" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="Memory" positionX="-63" positionY="18" width="128" height="90"/>
     </elements>
 </model>
