@@ -79,8 +79,17 @@ class RegisterViewController: UIViewController {
       alert.addAction(OKButton())
       return present(alert, animated: true, completion: nil)
     }
-    UserDefaults.standard.set(number, forKey: "USER_NUMBER")
-    UserDefaults.standard.set(name, forKey: "USER_NAME")
+    
+    let newUser = User(name, number)
+    
+    if UserDAO.create(newUser), let image = profilePicture.image {
+      guard let imgData = UIImageJPEGRepresentation(image, 1) as NSData? else {
+        NSLog("Image conversion error")
+        return
+      }
+      
+      let picture = ProfilePicture(imgData, newUser)
+    }
     
     dismiss(animated: true, completion: nil)
   }

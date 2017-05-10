@@ -19,4 +19,12 @@ public class ProfilePicture: NSManagedObject {
     
     self.init(entity: entity, insertInto: context)
   }
+  
+  convenience init(_ imageData: NSData, _ user: User) {
+    self.init()
+    
+    self.imageData = imageData
+    self.user = user
+    user.picture = self
+  }
 }

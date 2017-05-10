@@ -19,4 +19,11 @@ public class User: NSManagedObject {
     
     self.init(entity: entity, insertInto: context)
   }
+  
+  convenience init(_ name: String, _ phone: String) {
+    self.init()
+    
+    self.name = name
+    self.phone = phone
+  }
 }
