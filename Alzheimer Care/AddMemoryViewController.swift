@@ -9,14 +9,11 @@
 import UIKit
 import AVFoundation
 
-// protocol used for sending data back
-protocol MemoryEnteredDelegate: class {
-    func userDidEnterInformation(memory: Memory)
-}
-
 class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDelegate {
     
     // MARK: - Properties
+    
+    weak var delegate: MemoryEnteredDelegate? = nil
     
     var actualDate: Date = Date()
     var soundURL: NSURL = NSURL()
@@ -27,13 +24,13 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
     var settings         = [String : Int]()
     var audioPlayer : AVAudioPlayer!
     
-    weak var delegate: MemoryEnteredDelegate? = nil
+    // MARK: - Outlets
     
     @IBOutlet weak var nameMemoryTextField: UITextField!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     
-    // MARK: - Configurations
+    // MARK: - System Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +46,7 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
         createRecordSession()
     }
     
-    // MARK: - Record Functions
+    // MARK: - AV Audio Functions
     
     func createRecordSession() {
         recordingSession = AVAudioSession.sharedInstance()
@@ -85,6 +82,8 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
             AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
         ]
     }
+    
+    // MARK: - Record Functions
     
     @IBAction func recordAudio(_ sender: Any) {
         if audioRecorder == nil {
@@ -127,7 +126,7 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
             print(success)
         } else {
             audioRecorder = nil
-            print("Somthing Wrong.")
+            print("Something Wrong.")
         }
     }
     
@@ -176,8 +175,6 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
     
     @IBAction func saveMemoryButton(_ sender: Any) {
         if delegate != nil {
-            print("URL ADD")
-            print(audioRecorder.url)
             let memory = Memory(name: nameMemoryTextField.text!, date: actualDate, audio: audioRecorder.url as NSURL)
             
             // call this method on whichever class implements our delegate protocol
@@ -187,4 +184,10 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
         }
     }
         
+}
+
+// MARK: - Protocols
+//protocol used for sending data back
+protocol MemoryEnteredDelegate: class {
+    func userDidEnterInformation(memory: Memory)
 }

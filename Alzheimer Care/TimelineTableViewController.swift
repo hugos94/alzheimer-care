@@ -11,10 +11,20 @@ import AVFoundation
 
 class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate, MemoryEnteredDelegate {
     
-    var listOfMemories: [Memory] = []
+    // MARK: - Properties
     
-    var audioRecorder    :AVAudioRecorder!
+    var listOfMemories: [Memory] = []
+    var recordingSession : AVAudioSession!
+    var settings         = [String : Int]()
     var audioPlayer : AVAudioPlayer!
+    
+    // MARK: - System Functions
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        createRecordSession()
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -22,7 +32,7 @@ class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate,
         tableView.reloadData()
     }
 
-    // MARK: - Table view data source
+    // MARK: - Table View Data Source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -42,54 +52,75 @@ class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate,
             memoryCell.memoryNameLabel.text = memory.name
             memoryCell.memoryDateLabel.text = memory.getFormattedData()
             memoryCell.onButtonTapped = {
+                self.audioPlayer = try! AVAudioPlayer(contentsOf: memory.audio as URL)
+                self.audioPlayer.prepareToPlay()
+                self.audioPlayer.delegate = self
+                self.audioPlayer.play()
             }
         }
         
         return cell
     }
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    
-    // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             listOfMemories.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+    // MARK: - AV Audio Functions
+    
+    func createRecordSession() {
+        recordingSession = AVAudioSession.sharedInstance()
+        do {
+            try recordingSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try recordingSession.setActive(true)
+            recordingSession.requestRecordPermission() { [unowned self] allowed in
+                DispatchQueue.main.async {
+                    if allowed {
+                        print("Allow")
+                    } else {
+                        let alert = UIAlertController(title: "Erro!", message: "Você não aceitou utilizar o microfone do seu dispositivo!", preferredStyle: .actionSheet)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default) { action in
+                        })
+                        self.present(alert, animated: true)
+                        print("Dont Allow")
+                    }
+                }
+            }
+        } catch {
+            let alert = UIAlertController(title: "Erro!", message: "Não foi possível ativar a gravação de áudio!", preferredStyle: .actionSheet)
+            alert.addAction(UIAlertAction(title: "OK", style: .default) { action in
+            })
+            self.present(alert, animated: true)
+        }
+        
+        // Audio Settings
+        
+        settings = [
+            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+            AVSampleRateKey: 12000,
+            AVNumberOfChannelsKey: 1,
+            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+        ]
     }
-    */
 
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+    // MARK: - Play Functions
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        print(flag)
     }
-    */
-
+    func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?){
+        print(error.debugDescription)
+    }
+    internal func audioPlayerBeginInterruption(_ player: AVAudioPlayer){
+        print(player.debugDescription)
+    }
     
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
         if segue.identifier == "addMemorySegue" {
             if let addNavigationController = segue.destination as? UINavigationController {
                 if let addMemoryViewController: AddMemoryViewController = addNavigationController.viewControllers.first as? AddMemoryViewController {
