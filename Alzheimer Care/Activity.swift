@@ -11,13 +11,16 @@ import Foundation
 class Activity {
     
     let name : String
+    let description : String
     let time : String
     let frequency : [DayOfWeek]
     
-    init(name : String, time: String, frequency : [DayOfWeek]){
+    init(name : String, description: String, time: String, frequency : [DayOfWeek]){
         self.name = name
+        self.description = description
         self.time = time
         self.frequency = frequency
+        
     }
     
 }
