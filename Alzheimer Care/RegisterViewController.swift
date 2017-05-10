@@ -13,7 +13,7 @@ class RegisterViewController: UIViewController {
   
   // MARK: - Properties
   
-  @IBOutlet weak var userPhotoImageView: UIImageView!
+  @IBOutlet weak var profilePicture: UIImageView!
   @IBOutlet weak var userNameTextField: UITextField!
   @IBOutlet weak var userNumberTextField: UITextField!
   
@@ -23,10 +23,7 @@ class RegisterViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.hideKeyboardWhenTappedAround()
-    
-    self.imagePicker.delegate = self
-    self.imagePicker.allowsEditing = false
+    self.setupUI()
   }
   
   // MARK: - Actions
@@ -63,6 +60,19 @@ class RegisterViewController: UIViewController {
     dismiss(animated: true, completion: nil)
   }
   
+  private func setupUI() {
+    self.hideKeyboardWhenTappedAround()
+    
+    self.imagePicker.delegate = self
+    self.imagePicker.allowsEditing = false
+    
+    self.profilePicture.layer.borderWidth = 1
+    self.profilePicture.layer.masksToBounds = false
+    self.profilePicture.layer.borderColor = UIColor.black.cgColor
+    self.profilePicture.layer.cornerRadius = self.profilePicture.frame.height / 2
+    self.profilePicture.clipsToBounds = true
+  }
+  
   private func OKButton() -> UIAlertAction {
     return UIAlertAction(title: "OK", style: .default, handler: nil)
   }
@@ -71,11 +81,11 @@ class RegisterViewController: UIViewController {
 extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
     if let pickedImage = info[UIImagePickerControllerEditedImage] as? UIImage {
-      userPhotoImageView.contentMode = .scaleAspectFit
-      userPhotoImageView.image = pickedImage
+      profilePicture.contentMode = .scaleAspectFit
+      profilePicture.image = pickedImage
     } else if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-      userPhotoImageView.contentMode = .scaleAspectFit
-      userPhotoImageView.image = pickedImage
+      profilePicture.contentMode = .scaleAspectFit
+      profilePicture.image = pickedImage
     } else {
       print("Failed to convert image for some reason")
     }
