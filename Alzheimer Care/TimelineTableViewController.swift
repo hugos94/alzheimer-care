@@ -52,7 +52,7 @@ class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate,
             memoryCell.memoryNameLabel.text = memory.name
             memoryCell.memoryDateLabel.text = memory.getFormattedData()
             memoryCell.onButtonTapped = {
-                self.audioPlayer = try! AVAudioPlayer(contentsOf: memory.audio as URL)
+                self.audioPlayer = try! AVAudioPlayer(contentsOf: memory.url as URL)
                 self.audioPlayer.prepareToPlay()
                 self.audioPlayer.delegate = self
                 self.audioPlayer.play()

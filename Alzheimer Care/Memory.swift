@@ -11,15 +11,14 @@ import Foundation
 class Memory {
     let name: String
     let date: Date
-    let dateFormatter = DateFormatter()
-    var audio: NSURL
-    var formattedDate: String = ""
+    var url: NSURL
+    private let dateFormatter = DateFormatter()
     
     init(name: String, date: Date, audio: NSURL) {
         
         self.name = name
         self.date = date
-        self.audio = audio
+        self.url = audio
     
     }
     

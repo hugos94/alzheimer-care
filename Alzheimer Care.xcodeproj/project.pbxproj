@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3F9A873D1EC3401C00C7A6F5 /* Dictionaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A873C1EC3401C00C7A6F5 /* Dictionaries.swift */; };
+		3F9A87481EC345DF00C7A6F5 /* Memory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A87461EC345DF00C7A6F5 /* Memory+CoreDataClass.swift */; };
+		3F9A87491EC345DF00C7A6F5 /* Memory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A87471EC345DF00C7A6F5 /* Memory+CoreDataProperties.swift */; };
 		3FBFD12F1EC0A23A009165EF /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */; };
 		3FCA917B1EC334D700F6AE29 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCA917A1EC334D700F6AE29 /* Register.storyboard */; };
 		3FDA8B091EC1EBC400B36C55 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8B081EC1EBC400B36C55 /* DataManager.swift */; };
@@ -58,6 +60,8 @@
 
 /* Begin PBXFileReference section */
 		3F9A873C1EC3401C00C7A6F5 /* Dictionaries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionaries.swift; sourceTree = "<group>"; };
+		3F9A87461EC345DF00C7A6F5 /* Memory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Memory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3F9A87471EC345DF00C7A6F5 /* Memory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Memory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		3FCA917A1EC334D700F6AE29 /* Register.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		3FDA8B081EC1EBC400B36C55 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 		F58FAA021EBE8E4E00BC31D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3F9A87461EC345DF00C7A6F5 /* Memory+CoreDataClass.swift */,
+				3F9A87471EC345DF00C7A6F5 /* Memory+CoreDataProperties.swift */,
 				3FDA8B0A1EC1EDAA00B36C55 /* User+CoreDataClass.swift */,
 				3FDA8B0B1EC1EDAA00B36C55 /* User+CoreDataProperties.swift */,
 				3FDA8B0C1EC1EDAA00B36C55 /* ProfilePicture+CoreDataClass.swift */,
@@ -584,8 +590,10 @@
 				F53118D71EBEC5900035DA11 /* ActivitiesViewController.swift in Sources */,
 				F52600461EC139EC004232EF /* Activity.swift in Sources */,
 				3FDA8B0F1EC1EDAA00B36C55 /* User+CoreDataProperties.swift in Sources */,
+				3F9A87481EC345DF00C7A6F5 /* Memory+CoreDataClass.swift in Sources */,
 				3FDA8B0E1EC1EDAA00B36C55 /* User+CoreDataClass.swift in Sources */,
 				3FBFD12F1EC0A23A009165EF /* ExtensionViewController.swift in Sources */,
+				3F9A87491EC345DF00C7A6F5 /* Memory+CoreDataProperties.swift in Sources */,
 				F503637B1EBD662A00ABF756 /* HomeViewController.swift in Sources */,
 				F52600481EC13A74004232EF /* PhysicalActivityTableViewCell.swift in Sources */,
 				F526004D1EC14C7B004232EF /* Enums.swift in Sources */,
