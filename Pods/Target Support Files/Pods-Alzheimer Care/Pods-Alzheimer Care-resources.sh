@@ -79,30 +79,6 @@ EOM
       ;;
   esac
 }
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar@2x.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar@3x.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall@2x.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconIcySmall.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconIcySmall@2x.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconMintSmall.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconMintSmall@2x.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beacon_grey@2x.png"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar@2x.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/avatar@3x.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall@2x.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconIcySmall.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconIcySmall@2x.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconMintSmall.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beaconMintSmall@2x.png"
-  install_resource "EstimoteIndoorSDK/EstimoteIndoorLocationSDK/Resources/beacon_grey@2x.png"
-fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

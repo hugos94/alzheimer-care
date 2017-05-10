@@ -19,143 +19,40 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04B8511BFFA74D6CEDC54687D7EED37F /* ESTRequestGetBeaconsDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetBeaconsDetails.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetBeaconsDetails.h; sourceTree = "<group>"; };
-		070AD0FD7BC14390C2964FC993C42EF6 /* ESTRequestCancelPendingSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestCancelPendingSettings.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestCancelPendingSettings.h; sourceTree = "<group>"; };
 		0816171980E3B344EAB0C6CCCA9133C1 /* Pods-Alzheimer CareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alzheimer CareUITests.release.xcconfig"; sourceTree = "<group>"; };
-		087BE5533404430CE64798A54A61E46E /* ESTDeviceConnectable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDeviceConnectable.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDeviceConnectable.h; sourceTree = "<group>"; };
 		0A4456B9B189D4C88F628A9CFB0A4CFF /* Pods-Alzheimer Care-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alzheimer Care-resources.sh"; sourceTree = "<group>"; };
 		115884263DB2B3CA50EB415CB81B4622 /* Pods-Alzheimer Care-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alzheimer Care-dummy.m"; sourceTree = "<group>"; };
 		14184E931D8F055627CEF1C0E6933ED4 /* Pods-Alzheimer CareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alzheimer CareTests.debug.xcconfig"; sourceTree = "<group>"; };
-		148CCCDEDCA4E9BBD91851C174192C17 /* beaconMintSmall.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = beaconMintSmall.png; path = EstimoteIndoorLocationSDK/Resources/beaconMintSmall.png; sourceTree = "<group>"; };
-		175EFD1972B610CBF9770D16E2200C8C /* ESTBeaconRecentConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconRecentConfig.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconRecentConfig.h; sourceTree = "<group>"; };
 		1782EC36FAB22A55C28C95E7063D65BA /* Pods-Alzheimer Care.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alzheimer Care.debug.xcconfig"; sourceTree = "<group>"; };
-		17C0E22438E98346B341990F381779EE /* ESTNotificationSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNotificationSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNotificationSettingProtocol.h; sourceTree = "<group>"; };
-		1A1A889312FAF74B67A0AFE40A34A12A /* ESTBeaconRecentUpdateInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconRecentUpdateInfo.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconRecentUpdateInfo.h; sourceTree = "<group>"; };
-		1AD4998592DD6B01A34CD2A599CFE5CB /* ESTNearableVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableVO.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableVO.h; sourceTree = "<group>"; };
-		1C88C5990FED62DEF850A198D898A64D /* avatar@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "avatar@2x.png"; path = "EstimoteIndoorLocationSDK/Resources/avatar@2x.png"; sourceTree = "<group>"; };
-		1CB6AE7BABC5F8FD090F42A019DBEAE7 /* ESTNearableDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableDefinitions.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableDefinitions.h; sourceTree = "<group>"; };
 		1D8C2BB893F688487B55DC8152CF5E63 /* Pods-Alzheimer Care-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alzheimer Care-frameworks.sh"; sourceTree = "<group>"; };
-		1F9F6727065472A09C0F0D2A69392F26 /* ESTRequestBeaconMac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestBeaconMac.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestBeaconMac.h; sourceTree = "<group>"; };
-		1FBCDED63F0C4F4D99B09803BA9CE844 /* ESTBeaconBaseVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconBaseVO.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconBaseVO.h; sourceTree = "<group>"; };
 		220BB5182ABBA43570C2120B3DFAB3FE /* Pods-Alzheimer Care-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Alzheimer Care-acknowledgements.markdown"; sourceTree = "<group>"; };
-		237020263D76E7E2F25F0CBA09D017F0 /* ESTDateRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDateRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDateRule.h; sourceTree = "<group>"; };
 		2418F63D6384ADD4DACE1C0BB3B88440 /* Pods-Alzheimer CareTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Alzheimer CareTests.modulemap"; sourceTree = "<group>"; };
-		278EB2691053E40FD0CBF9B514A6A1BC /* beacon_grey@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "beacon_grey@2x.png"; path = "EstimoteIndoorLocationSDK/Resources/beacon_grey@2x.png"; sourceTree = "<group>"; };
-		2984281F375BA81909C9C50EC600AE50 /* EILOrientedLineSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILOrientedLineSegment.h; path = EstimoteIndoorLocationSDK/Headers/EILOrientedLineSegment.h; sourceTree = "<group>"; };
-		2A5C02549A5B3178631C7BF2D9D93F59 /* ESTEddystoneFilterURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneFilterURL.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilterURL.h; sourceTree = "<group>"; };
-		2AD4865AA8C929095F937EAA99AAB22F /* ESTBeaconUpdateInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconUpdateInfo.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconUpdateInfo.h; sourceTree = "<group>"; };
-		2E0864F82AA2E1A6A212F3A7D95D7CAD /* beaconBlueberrySmall@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "beaconBlueberrySmall@2x.png"; path = "EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall@2x.png"; sourceTree = "<group>"; };
-		31E3C2B3F9E4650C655514299DE7FAD5 /* beaconMintSmall@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "beaconMintSmall@2x.png"; path = "EstimoteIndoorLocationSDK/Resources/beaconMintSmall@2x.png"; sourceTree = "<group>"; };
-		3624DFB26C12E63E83BECAA2922712A2 /* ESTNotificationTransporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNotificationTransporter.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNotificationTransporter.h; sourceTree = "<group>"; };
-		37F28C77DDF813529F1A5F9B442B27AD /* ESTMotionRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTMotionRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTMotionRule.h; sourceTree = "<group>"; };
 		386E069C994036F1A168377CA929E475 /* Pods-Alzheimer CareUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alzheimer CareUITests-umbrella.h"; sourceTree = "<group>"; };
 		399CE5B4FAFABD8DAF2430C818296933 /* Pods-Alzheimer CareUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Alzheimer CareUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3A8559CE794AC7298CAD0C591AEF1C56 /* ESTRequestBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestBase.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestBase.h; sourceTree = "<group>"; };
-		3D1D8120FD5CECAEF8CF07F9B0DC06CA /* EILLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILLocation.h; path = EstimoteIndoorLocationSDK/Headers/EILLocation.h; sourceTree = "<group>"; };
 		401B1C0A07B1A7D0DE6BA3C7F598D5D5 /* Pods-Alzheimer CareUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Alzheimer CareUITests.modulemap"; sourceTree = "<group>"; };
-		426C621FAF44CBB81B2E6FD826E62F06 /* EILIndoorLocationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILIndoorLocationView.h; path = EstimoteIndoorLocationSDK/Headers/EILIndoorLocationView.h; sourceTree = "<group>"; };
-		4499A77BCA7BC68A4BA24935635FAE0A /* ESTBeaconVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconVO.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconVO.h; sourceTree = "<group>"; };
 		44DD128822911623A9DC51A73BDFB363 /* Pods-Alzheimer CareTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alzheimer CareTests-resources.sh"; sourceTree = "<group>"; };
-		4683226E93B45115C0C19F61F039441A /* ESTEddystoneManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneManager.h; sourceTree = "<group>"; };
-		46E78D7F2A26867AA598CF3C884E1500 /* ESTBeaconFirmwareVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconFirmwareVO.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconFirmwareVO.h; sourceTree = "<group>"; };
-		47B6B49F79C87533EF8FB2B3B11CEC62 /* ESTDeviceNearableSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDeviceNearableSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDeviceNearableSettingProtocol.h; sourceTree = "<group>"; };
 		484875BB4AC656F837CCFEF237118C62 /* Pods-Alzheimer Care-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alzheimer Care-umbrella.h"; sourceTree = "<group>"; };
-		49E32F6BB3D0FF74F27CCF9513DB7AC8 /* ESTCloudManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTCloudManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTCloudManager.h; sourceTree = "<group>"; };
-		4EE71ED351FDB8008BCDFAF22D234714 /* ESTRequestDelete.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestDelete.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestDelete.h; sourceTree = "<group>"; };
-		4EEBD631BCD0BBC97468326239E3AEFB /* ESTBeaconManagerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconManagerDelegate.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconManagerDelegate.h; sourceTree = "<group>"; };
-		506C5AA171704B4AD0F9EEDAC1D57227 /* ESTRequestPutJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestPutJSON.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestPutJSON.h; sourceTree = "<group>"; };
-		55E936A3125040D292344AA03D7CCCEE /* ESTNearable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearable.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearable.h; sourceTree = "<group>"; };
-		59D1A0ACCA6730587324F49105A50A77 /* EstimoteSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EstimoteSDK.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/EstimoteSDK.h; sourceTree = "<group>"; };
-		5E4DDF0F06CED621111D70CF31A618C4 /* ESTDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDefinitions.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDefinitions.h; sourceTree = "<group>"; };
-		5F71AA24F5528C6299F0157FA31D796B /* ESTRequestGetSettingsHistory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetSettingsHistory.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetSettingsHistory.h; sourceTree = "<group>"; };
-		62877F09E7B671F2DB3B7C3492509A07 /* ESTRequestPatchJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestPatchJSON.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestPatchJSON.h; sourceTree = "<group>"; };
-		63215F66B3F17B849E3777E8E2EAAEF7 /* EILRequestAddLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILRequestAddLocation.h; path = EstimoteIndoorLocationSDK/Headers/EILRequestAddLocation.h; sourceTree = "<group>"; };
-		65DBD6DE89E70BDA52941B5DCAF65D58 /* ESTOrientationRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTOrientationRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTOrientationRule.h; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		66A5E4EE366B7C74089717B3EAD6E685 /* Pods_Alzheimer_CareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Alzheimer_CareTests.framework; path = "Pods-Alzheimer CareTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		66EF6C98F885DA0DC9FF7CB5C7DC3B7A /* ESTNearableManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableManager.h; sourceTree = "<group>"; };
-		699947E7ED66E9101258A52234C94A47 /* ESTDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDevice.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDevice.h; sourceTree = "<group>"; };
-		6C827AD4C765593F1DF73E4387172589 /* ESTUtilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTUtilityManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTUtilityManager.h; sourceTree = "<group>"; };
-		6D2E99B9FDD6640D613EA8FB83E60CD4 /* ESTBeaconUpdateConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconUpdateConfig.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconUpdateConfig.h; sourceTree = "<group>"; };
-		6D71F41E3A30D5FF7CD0F01BB00C3159 /* EILOrientedPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILOrientedPoint.h; path = EstimoteIndoorLocationSDK/Headers/EILOrientedPoint.h; sourceTree = "<group>"; };
-		6E59D99C82983600DDEE8FFACA2C73EE /* ESTRequestAssignGPSLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestAssignGPSLocation.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestAssignGPSLocation.h; sourceTree = "<group>"; };
 		70EB336241FCB649F24C9323B8C6D283 /* Pods_Alzheimer_Care.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Alzheimer_Care.framework; path = "Pods-Alzheimer Care.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71803F179058A9D4B93F8DD7FFC22BE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7224C5808372B0E47C01286FE333EDA6 /* Pods-Alzheimer CareTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alzheimer CareTests-frameworks.sh"; sourceTree = "<group>"; };
-		74AF8BA58AEB095A1333CFFD8D14E915 /* EILIndoorLocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILIndoorLocationManager.h; path = EstimoteIndoorLocationSDK/Headers/EILIndoorLocationManager.h; sourceTree = "<group>"; };
 		753A69A6A04C69D8A077B030A063FA7C /* Pods-Alzheimer CareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alzheimer CareTests.release.xcconfig"; sourceTree = "<group>"; };
 		7641BCA8E179A4B1F6B00B6892CC41B4 /* Pods-Alzheimer CareUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alzheimer CareUITests-frameworks.sh"; sourceTree = "<group>"; };
-		78475416CA48763C9948DB2347E8B7F6 /* ESTDeviceSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDeviceSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDeviceSettingProtocol.h; sourceTree = "<group>"; };
-		78DB4E716B91A0BCF5B116C4D83F3242 /* ESTRequestGetJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetJSON.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetJSON.h; sourceTree = "<group>"; };
-		79C09849A5F3AF66F98BDE4A5E85F60C /* ESTRequestRegisterDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestRegisterDevice.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestRegisterDevice.h; sourceTree = "<group>"; };
-		7B37BC586D03A0C3681BAD48B2929644 /* EILPositionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILPositionView.h; path = EstimoteIndoorLocationSDK/Headers/EILPositionView.h; sourceTree = "<group>"; };
-		7C69BF7E6FEBFDC8C465C994AE67A8FC /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EstimoteSDK.framework; path = EstimoteSDK/EstimoteSDK.framework; sourceTree = "<group>"; };
 		7E377A2FD059548F2DCC2697FB9DE104 /* Pods-Alzheimer CareUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Alzheimer CareUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7ECD94DDE792BADAB1C17E743A3549A2 /* EILRequestRemoveLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILRequestRemoveLocation.h; path = EstimoteIndoorLocationSDK/Headers/EILRequestRemoveLocation.h; sourceTree = "<group>"; };
-		8337A87671EEF076FBF644181829508B /* ESTRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRule.h; sourceTree = "<group>"; };
-		86BAEDEDED5B857DD944F465AF64D977 /* ESTBluetoothBeacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBluetoothBeacon.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBluetoothBeacon.h; sourceTree = "<group>"; };
-		880925CEDC65C53E4B94FD0A3F6C85C1 /* ESTEddystoneFilterURLDomain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneFilterURLDomain.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilterURLDomain.h; sourceTree = "<group>"; };
-		883BFCCC964C085407755A13E86D4D0A /* ESTRequestBeaconDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestBeaconDetails.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestBeaconDetails.h; sourceTree = "<group>"; };
-		89830751BC4DB57CDD828AA900977059 /* EILRequestFetchPublicLocations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILRequestFetchPublicLocations.h; path = EstimoteIndoorLocationSDK/Headers/EILRequestFetchPublicLocations.h; sourceTree = "<group>"; };
-		8C4F84004ACE8B79B25BFAAF4803C373 /* ESTRequestGetBeacons.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetBeacons.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetBeacons.h; sourceTree = "<group>"; };
-		8ED7AAF51F87B28A6BF825D936385167 /* EILLocationBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILLocationBuilder.h; path = EstimoteIndoorLocationSDK/Headers/EILLocationBuilder.h; sourceTree = "<group>"; };
 		8F20E0FCA70CC901426FAD9916C831B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F921EE8C774984E60AF85CAAA2088AC /* ESTRequestGetBeaconsPublicDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetBeaconsPublicDetails.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetBeaconsPublicDetails.h; sourceTree = "<group>"; };
-		919FFEAB3281E9C34970AF8AAB242CAA /* ESTNearableSettingAdvertisingIntervalStill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingAdvertisingIntervalStill.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingAdvertisingIntervalStill.h; sourceTree = "<group>"; };
-		9221524EB35B12F15BC3D20DDA0B4FEE /* ESTDeviceNearable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTDeviceNearable.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTDeviceNearable.h; sourceTree = "<group>"; };
-		927FDB558EDA89F971F63B8DDFF94506 /* ESTBeaconConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconConnection.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconConnection.h; sourceTree = "<group>"; };
-		938F1A2672DDC6BFC23A99564DB9F3B4 /* EILRequestFetchLocations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILRequestFetchLocations.h; path = EstimoteIndoorLocationSDK/Headers/EILRequestFetchLocations.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93D8B36CB51F8DCE4EACE2D5B216A09C /* EILLocationLinearObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILLocationLinearObject.h; path = EstimoteIndoorLocationSDK/Headers/EILLocationLinearObject.h; sourceTree = "<group>"; };
-		9A3FE4CEA7273DABDC1BFD0A931A3856 /* ESTSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTSettingProtocol.h; sourceTree = "<group>"; };
-		9B0B0E32D2C4DAB8B43F5C05F41E56E1 /* ESTEddystone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystone.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystone.h; sourceTree = "<group>"; };
-		9CC18BB07933E7583D652588CDAF12D9 /* ESTEddystoneTelemetry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneTelemetry.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneTelemetry.h; sourceTree = "<group>"; };
 		A46AE6B96A51A2409D57208C334FD878 /* Pods_Alzheimer_CareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Alzheimer_CareUITests.framework; path = "Pods-Alzheimer CareUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A57CC478959B06E86B988A9B26BA5CF4 /* ESTBeaconDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconDefinitions.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconDefinitions.h; sourceTree = "<group>"; };
-		A6FC13FCB54B88F56C2F66C13C6FCB38 /* ESTProximityRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTProximityRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTProximityRule.h; sourceTree = "<group>"; };
-		A9D3FA72B6A30F35BCB0D981C7E5DB5B /* beaconIcySmall@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "beaconIcySmall@2x.png"; path = "EstimoteIndoorLocationSDK/Resources/beaconIcySmall@2x.png"; sourceTree = "<group>"; };
-		AB8FC589A156F7BA1D58525A83A9F073 /* avatar@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "avatar@3x.png"; path = "EstimoteIndoorLocationSDK/Resources/avatar@3x.png"; sourceTree = "<group>"; };
-		AFD29B1CC6AF8AA1D247E861D5DC6DEA /* ESTRequestGetPendingSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetPendingSettings.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetPendingSettings.h; sourceTree = "<group>"; };
-		B1BAB70EED0374827B73F0F2C741915F /* EILIndoorSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILIndoorSDK.h; path = EstimoteIndoorLocationSDK/Headers/EILIndoorSDK.h; sourceTree = "<group>"; };
-		B3809C0342D081B454DF02F31F5DE0A8 /* ESTEddystoneFilterUID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneFilterUID.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilterUID.h; sourceTree = "<group>"; };
-		B3F702DACBB719E9D24F35A5285FE06F /* ESTConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTConfig.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTConfig.h; sourceTree = "<group>"; };
 		B4F11224F3C3DF01567069BF616F0A97 /* Pods-Alzheimer Care-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Alzheimer Care-acknowledgements.plist"; sourceTree = "<group>"; };
-		B70FEC82C27EF94E1B61604E757ADC91 /* ESTBeaconManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBeaconManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBeaconManager.h; sourceTree = "<group>"; };
-		B86A314373141C90FD404A428A3F1078 /* EILPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILPoint.h; path = EstimoteIndoorLocationSDK/Headers/EILPoint.h; sourceTree = "<group>"; };
-		B9A3D603C4ADC45F3EBC5294C9DF9FBF /* libEstimoteIndoorSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libEstimoteIndoorSDK.a; path = EstimoteIndoorLocationSDK/libEstimoteIndoorSDK.a; sourceTree = "<group>"; };
 		BA25DDA8ED6691BA555C731930203318 /* Pods-Alzheimer CareTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alzheimer CareTests-dummy.m"; sourceTree = "<group>"; };
-		BA2731D293C6BB7B527401F29E901AA0 /* beaconIcySmall.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = beaconIcySmall.png; path = EstimoteIndoorLocationSDK/Resources/beaconIcySmall.png; sourceTree = "<group>"; };
 		BDFFC405385A979A605DFEFF72DEF429 /* Pods-Alzheimer CareTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Alzheimer CareTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C1DF932D40BEDA3037C7678B5DC8C86A /* ESTNearableSettingAppVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingAppVersion.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingAppVersion.h; sourceTree = "<group>"; };
-		C451D484D74A142CF8105F1938280179 /* EILPositionedBeacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILPositionedBeacon.h; path = EstimoteIndoorLocationSDK/Headers/EILPositionedBeacon.h; sourceTree = "<group>"; };
-		C5044FB999AE8D25D6DD9FFF84A5C67D /* ESTSimulatedNearableManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTSimulatedNearableManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTSimulatedNearableManager.h; sourceTree = "<group>"; };
-		C5CB07E3E1C1DE6CBA39E5A72A669008 /* ESTRequestPostJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestPostJSON.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestPostJSON.h; sourceTree = "<group>"; };
 		C5F93E7A6FDE2B914A6C71CEB538E29F /* Pods-Alzheimer CareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alzheimer CareUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C7AE6D5EABDDCC4E353521D7403730DF /* ESTEddystoneFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneFilter.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneFilter.h; sourceTree = "<group>"; };
-		CBE89A25ECA305243CECF8FDC70BD214 /* ESTRequestPostFormData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestPostFormData.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestPostFormData.h; sourceTree = "<group>"; };
-		CC78B37B37BE34B7EC02CD1DC4073887 /* ESTBulkUpdater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTBulkUpdater.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTBulkUpdater.h; sourceTree = "<group>"; };
 		CD61A7C3AFFFBA16E2248F5D7622F589 /* Pods-Alzheimer CareTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alzheimer CareTests-umbrella.h"; sourceTree = "<group>"; };
 		CDAAA0A7F80FB4637B33907483CBC1C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEB0A2D16543852D6666C6E28220E928 /* ESTCloudSettingProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTCloudSettingProtocol.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTCloudSettingProtocol.h; sourceTree = "<group>"; };
 		D04D309B3A291FC8FEAD028FE113EBFA /* Pods-Alzheimer CareTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Alzheimer CareTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D098B210C9E5C2042AE5E029F2BF7DB2 /* ESTNearableSettingBootVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingBootVersion.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingBootVersion.h; sourceTree = "<group>"; };
-		D1477A4D5D8FB43FCDAA49ADDB3E4602 /* ESTEddystoneUID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTEddystoneUID.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTEddystoneUID.h; sourceTree = "<group>"; };
-		D14D48C1AD5BDAA83217A7021761A4F5 /* ESTNearableRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableRule.h; sourceTree = "<group>"; };
-		D2E1CD50859E25164C91A561E9140BA0 /* ESTTemperatureRule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTTemperatureRule.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTTemperatureRule.h; sourceTree = "<group>"; };
 		DC47D5BB3AF71A17CA0770658922C3D9 /* Pods-Alzheimer CareUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alzheimer CareUITests-dummy.m"; sourceTree = "<group>"; };
-		DCED3DEEDD6EB903521ED102AAC95388 /* ESTTriggerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTTriggerManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTTriggerManager.h; sourceTree = "<group>"; };
-		DDAAD30031C7B119315790A899A20488 /* ESTNearableSettingBroadcastingPower.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingBroadcastingPower.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingBroadcastingPower.h; sourceTree = "<group>"; };
-		E229BF123065E63CC411E10FE8DBF40B /* ESTRequestGetNearables.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestGetNearables.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestGetNearables.h; sourceTree = "<group>"; };
-		E30D8F2788B054FBD7060782C411D6EA /* beaconBlueberrySmall.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = beaconBlueberrySmall.png; path = EstimoteIndoorLocationSDK/Resources/beaconBlueberrySmall.png; sourceTree = "<group>"; };
-		E4D94217BFEE2419B5E955F674D91489 /* ESTTrigger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTTrigger.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTTrigger.h; sourceTree = "<group>"; };
-		E608792B602C8CDAE2EAC53D86D93129 /* avatar.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = avatar.png; path = EstimoteIndoorLocationSDK/Resources/avatar.png; sourceTree = "<group>"; };
-		F4807B69EE115FADA3575D9F6C37F786 /* ESTSecureBeaconManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTSecureBeaconManager.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTSecureBeaconManager.h; sourceTree = "<group>"; };
-		F7CA1FC3D230BF0171090084C9FE4A14 /* EILRequestFetchLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EILRequestFetchLocation.h; path = EstimoteIndoorLocationSDK/Headers/EILRequestFetchLocation.h; sourceTree = "<group>"; };
-		FB2FEF6C45573D9F6FA611ED98385FF4 /* ESTFirmwareInfoVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTFirmwareInfoVO.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTFirmwareInfoVO.h; sourceTree = "<group>"; };
 		FB428606D571D77FC2DD530CBE9FF57B /* Pods-Alzheimer Care.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Alzheimer Care.modulemap"; sourceTree = "<group>"; };
-		FC45466458EE3201FA83C081A500AE5F /* ESTRequestBeaconColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTRequestBeaconColor.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTRequestBeaconColor.h; sourceTree = "<group>"; };
 		FD2AA430D599B54AA2613C906828A48E /* Pods-Alzheimer Care.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alzheimer Care.release.xcconfig"; sourceTree = "<group>"; };
-		FD4F8935245ED4C86A7B8C2BA39DF279 /* ESTNearableSettingHardwareVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ESTNearableSettingHardwareVersion.h; path = EstimoteSDK/EstimoteSDK.framework/Versions/A/Headers/ESTNearableSettingHardwareVersion.h; sourceTree = "<group>"; };
 		FEB60D7D9CA4AA9FAD60335D5EB1EAC6 /* Pods-Alzheimer CareUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alzheimer CareUITests-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,15 +130,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		45F8AE92E493B6F37494D4F612CFE164 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8E04F6A222D91C9168113B8C3BD2E06E /* EstimoteIndoorSDK */,
-				88E8CCD16A6147CC9A118F3BB66E19B6 /* EstimoteSDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		4B1B8B064198C0EC6FF16CF54C45A06C /* Pods-Alzheimer CareUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,145 +153,9 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				45F8AE92E493B6F37494D4F612CFE164 /* Pods */,
 				3C4C13783D71B67A81634286522A3FA0 /* Products */,
 				EFD07B3878F8EE6AFAAE3F94DDFE31FE /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		83F9A6D2346234485E7CD1C67581C5E0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B9A3D603C4ADC45F3EBC5294C9DF9FBF /* libEstimoteIndoorSDK.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		88E8CCD16A6147CC9A118F3BB66E19B6 /* EstimoteSDK */ = {
-			isa = PBXGroup;
-			children = (
-				1FBCDED63F0C4F4D99B09803BA9CE844 /* ESTBeaconBaseVO.h */,
-				927FDB558EDA89F971F63B8DDFF94506 /* ESTBeaconConnection.h */,
-				A57CC478959B06E86B988A9B26BA5CF4 /* ESTBeaconDefinitions.h */,
-				46E78D7F2A26867AA598CF3C884E1500 /* ESTBeaconFirmwareVO.h */,
-				B70FEC82C27EF94E1B61604E757ADC91 /* ESTBeaconManager.h */,
-				4EEBD631BCD0BBC97468326239E3AEFB /* ESTBeaconManagerDelegate.h */,
-				175EFD1972B610CBF9770D16E2200C8C /* ESTBeaconRecentConfig.h */,
-				1A1A889312FAF74B67A0AFE40A34A12A /* ESTBeaconRecentUpdateInfo.h */,
-				6D2E99B9FDD6640D613EA8FB83E60CD4 /* ESTBeaconUpdateConfig.h */,
-				2AD4865AA8C929095F937EAA99AAB22F /* ESTBeaconUpdateInfo.h */,
-				4499A77BCA7BC68A4BA24935635FAE0A /* ESTBeaconVO.h */,
-				86BAEDEDED5B857DD944F465AF64D977 /* ESTBluetoothBeacon.h */,
-				CC78B37B37BE34B7EC02CD1DC4073887 /* ESTBulkUpdater.h */,
-				49E32F6BB3D0FF74F27CCF9513DB7AC8 /* ESTCloudManager.h */,
-				CEB0A2D16543852D6666C6E28220E928 /* ESTCloudSettingProtocol.h */,
-				B3F702DACBB719E9D24F35A5285FE06F /* ESTConfig.h */,
-				237020263D76E7E2F25F0CBA09D017F0 /* ESTDateRule.h */,
-				5E4DDF0F06CED621111D70CF31A618C4 /* ESTDefinitions.h */,
-				699947E7ED66E9101258A52234C94A47 /* ESTDevice.h */,
-				087BE5533404430CE64798A54A61E46E /* ESTDeviceConnectable.h */,
-				9221524EB35B12F15BC3D20DDA0B4FEE /* ESTDeviceNearable.h */,
-				47B6B49F79C87533EF8FB2B3B11CEC62 /* ESTDeviceNearableSettingProtocol.h */,
-				78475416CA48763C9948DB2347E8B7F6 /* ESTDeviceSettingProtocol.h */,
-				9B0B0E32D2C4DAB8B43F5C05F41E56E1 /* ESTEddystone.h */,
-				C7AE6D5EABDDCC4E353521D7403730DF /* ESTEddystoneFilter.h */,
-				B3809C0342D081B454DF02F31F5DE0A8 /* ESTEddystoneFilterUID.h */,
-				2A5C02549A5B3178631C7BF2D9D93F59 /* ESTEddystoneFilterURL.h */,
-				880925CEDC65C53E4B94FD0A3F6C85C1 /* ESTEddystoneFilterURLDomain.h */,
-				4683226E93B45115C0C19F61F039441A /* ESTEddystoneManager.h */,
-				9CC18BB07933E7583D652588CDAF12D9 /* ESTEddystoneTelemetry.h */,
-				D1477A4D5D8FB43FCDAA49ADDB3E4602 /* ESTEddystoneUID.h */,
-				FB2FEF6C45573D9F6FA611ED98385FF4 /* ESTFirmwareInfoVO.h */,
-				59D1A0ACCA6730587324F49105A50A77 /* EstimoteSDK.h */,
-				37F28C77DDF813529F1A5F9B442B27AD /* ESTMotionRule.h */,
-				55E936A3125040D292344AA03D7CCCEE /* ESTNearable.h */,
-				1CB6AE7BABC5F8FD090F42A019DBEAE7 /* ESTNearableDefinitions.h */,
-				66EF6C98F885DA0DC9FF7CB5C7DC3B7A /* ESTNearableManager.h */,
-				D14D48C1AD5BDAA83217A7021761A4F5 /* ESTNearableRule.h */,
-				919FFEAB3281E9C34970AF8AAB242CAA /* ESTNearableSettingAdvertisingIntervalStill.h */,
-				C1DF932D40BEDA3037C7678B5DC8C86A /* ESTNearableSettingAppVersion.h */,
-				D098B210C9E5C2042AE5E029F2BF7DB2 /* ESTNearableSettingBootVersion.h */,
-				DDAAD30031C7B119315790A899A20488 /* ESTNearableSettingBroadcastingPower.h */,
-				FD4F8935245ED4C86A7B8C2BA39DF279 /* ESTNearableSettingHardwareVersion.h */,
-				1AD4998592DD6B01A34CD2A599CFE5CB /* ESTNearableVO.h */,
-				17C0E22438E98346B341990F381779EE /* ESTNotificationSettingProtocol.h */,
-				3624DFB26C12E63E83BECAA2922712A2 /* ESTNotificationTransporter.h */,
-				65DBD6DE89E70BDA52941B5DCAF65D58 /* ESTOrientationRule.h */,
-				A6FC13FCB54B88F56C2F66C13C6FCB38 /* ESTProximityRule.h */,
-				6E59D99C82983600DDEE8FFACA2C73EE /* ESTRequestAssignGPSLocation.h */,
-				3A8559CE794AC7298CAD0C591AEF1C56 /* ESTRequestBase.h */,
-				FC45466458EE3201FA83C081A500AE5F /* ESTRequestBeaconColor.h */,
-				883BFCCC964C085407755A13E86D4D0A /* ESTRequestBeaconDetails.h */,
-				1F9F6727065472A09C0F0D2A69392F26 /* ESTRequestBeaconMac.h */,
-				070AD0FD7BC14390C2964FC993C42EF6 /* ESTRequestCancelPendingSettings.h */,
-				4EE71ED351FDB8008BCDFAF22D234714 /* ESTRequestDelete.h */,
-				8C4F84004ACE8B79B25BFAAF4803C373 /* ESTRequestGetBeacons.h */,
-				04B8511BFFA74D6CEDC54687D7EED37F /* ESTRequestGetBeaconsDetails.h */,
-				8F921EE8C774984E60AF85CAAA2088AC /* ESTRequestGetBeaconsPublicDetails.h */,
-				78DB4E716B91A0BCF5B116C4D83F3242 /* ESTRequestGetJSON.h */,
-				E229BF123065E63CC411E10FE8DBF40B /* ESTRequestGetNearables.h */,
-				AFD29B1CC6AF8AA1D247E861D5DC6DEA /* ESTRequestGetPendingSettings.h */,
-				5F71AA24F5528C6299F0157FA31D796B /* ESTRequestGetSettingsHistory.h */,
-				62877F09E7B671F2DB3B7C3492509A07 /* ESTRequestPatchJSON.h */,
-				CBE89A25ECA305243CECF8FDC70BD214 /* ESTRequestPostFormData.h */,
-				C5CB07E3E1C1DE6CBA39E5A72A669008 /* ESTRequestPostJSON.h */,
-				506C5AA171704B4AD0F9EEDAC1D57227 /* ESTRequestPutJSON.h */,
-				79C09849A5F3AF66F98BDE4A5E85F60C /* ESTRequestRegisterDevice.h */,
-				8337A87671EEF076FBF644181829508B /* ESTRule.h */,
-				F4807B69EE115FADA3575D9F6C37F786 /* ESTSecureBeaconManager.h */,
-				9A3FE4CEA7273DABDC1BFD0A931A3856 /* ESTSettingProtocol.h */,
-				C5044FB999AE8D25D6DD9FFF84A5C67D /* ESTSimulatedNearableManager.h */,
-				D2E1CD50859E25164C91A561E9140BA0 /* ESTTemperatureRule.h */,
-				E4D94217BFEE2419B5E955F674D91489 /* ESTTrigger.h */,
-				DCED3DEEDD6EB903521ED102AAC95388 /* ESTTriggerManager.h */,
-				6C827AD4C765593F1DF73E4387172589 /* ESTUtilityManager.h */,
-				FD06179919723036FF96732BBFA91839 /* Frameworks */,
-			);
-			name = EstimoteSDK;
-			path = EstimoteSDK;
-			sourceTree = "<group>";
-		};
-		8E04F6A222D91C9168113B8C3BD2E06E /* EstimoteIndoorSDK */ = {
-			isa = PBXGroup;
-			children = (
-				74AF8BA58AEB095A1333CFFD8D14E915 /* EILIndoorLocationManager.h */,
-				426C621FAF44CBB81B2E6FD826E62F06 /* EILIndoorLocationView.h */,
-				B1BAB70EED0374827B73F0F2C741915F /* EILIndoorSDK.h */,
-				3D1D8120FD5CECAEF8CF07F9B0DC06CA /* EILLocation.h */,
-				8ED7AAF51F87B28A6BF825D936385167 /* EILLocationBuilder.h */,
-				93D8B36CB51F8DCE4EACE2D5B216A09C /* EILLocationLinearObject.h */,
-				2984281F375BA81909C9C50EC600AE50 /* EILOrientedLineSegment.h */,
-				6D71F41E3A30D5FF7CD0F01BB00C3159 /* EILOrientedPoint.h */,
-				B86A314373141C90FD404A428A3F1078 /* EILPoint.h */,
-				C451D484D74A142CF8105F1938280179 /* EILPositionedBeacon.h */,
-				7B37BC586D03A0C3681BAD48B2929644 /* EILPositionView.h */,
-				63215F66B3F17B849E3777E8E2EAAEF7 /* EILRequestAddLocation.h */,
-				F7CA1FC3D230BF0171090084C9FE4A14 /* EILRequestFetchLocation.h */,
-				938F1A2672DDC6BFC23A99564DB9F3B4 /* EILRequestFetchLocations.h */,
-				89830751BC4DB57CDD828AA900977059 /* EILRequestFetchPublicLocations.h */,
-				7ECD94DDE792BADAB1C17E743A3549A2 /* EILRequestRemoveLocation.h */,
-				83F9A6D2346234485E7CD1C67581C5E0 /* Frameworks */,
-				A6F4AB320F64986B41683154381EAA2A /* Resources */,
-			);
-			name = EstimoteIndoorSDK;
-			path = EstimoteIndoorSDK;
-			sourceTree = "<group>";
-		};
-		A6F4AB320F64986B41683154381EAA2A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E608792B602C8CDAE2EAC53D86D93129 /* avatar.png */,
-				1C88C5990FED62DEF850A198D898A64D /* avatar@2x.png */,
-				AB8FC589A156F7BA1D58525A83A9F073 /* avatar@3x.png */,
-				278EB2691053E40FD0CBF9B514A6A1BC /* beacon_grey@2x.png */,
-				E30D8F2788B054FBD7060782C411D6EA /* beaconBlueberrySmall.png */,
-				2E0864F82AA2E1A6A212F3A7D95D7CAD /* beaconBlueberrySmall@2x.png */,
-				BA2731D293C6BB7B527401F29E901AA0 /* beaconIcySmall.png */,
-				A9D3FA72B6A30F35BCB0D981C7E5DB5B /* beaconIcySmall@2x.png */,
-				148CCCDEDCA4E9BBD91851C174192C17 /* beaconMintSmall.png */,
-				31E3C2B3F9E4650C655514299DE7FAD5 /* beaconMintSmall@2x.png */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -430,14 +182,6 @@
 				4B1B8B064198C0EC6FF16CF54C45A06C /* Pods-Alzheimer CareUITests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		FD06179919723036FF96732BBFA91839 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7C69BF7E6FEBFDC8C465C994AE67A8FC /* EstimoteSDK.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
