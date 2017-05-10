@@ -178,24 +178,21 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
     
     @IBAction func saveMemoryButton(_ sender: Any) {
         if delegate != nil {
-//            let memory = Memory()
-//            memory.name = nameMemoryTextField.text!
-//            memory.date = actualDate
-//            print("Olha como ficou: ")
-//            print(audioRecorder.url)
-//            print(memory.url ?? "Deu erro no olha como ficou")
-//            memory.url = String(describing: audioRecorder.url)
-//            
-//            if MemoryDAO.insertion(memory: memory) {
-//                print("O filme \(memory.name!) foi inserido com sucesso!")
-//            } else {
-//                print("Não foi possível inserir o filme \(memory.name!)!")
-//            }
-//            
-//            // call this method on whichever class implements our delegate protocol
-//            delegate?.userDidEnterInformation(memory: memory)
-//            
-//            navigationController?.dismiss(animated: true, completion: nil)
+            let memory = Memory()
+            memory.name = nameMemoryTextField.text!
+            memory.date = actualDate
+            memory.url = String(describing: audioRecorder.url)
+
+            if MemoryDAO.insertion(memory: memory) {
+                print("A memória \(memory.name!) foi inserida com sucesso!")
+            } else {
+                print("Não foi possível inserir a memória \(memory.name!)!")
+            }
+            
+            // call this method on whichever class implements our delegate protocol
+            delegate?.userDidEnterInformation(memory: memory)
+            
+            navigationController?.dismiss(animated: true, completion: nil)
             
         }
     }

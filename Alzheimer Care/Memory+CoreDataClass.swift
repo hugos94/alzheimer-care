@@ -16,12 +16,8 @@ public class Memory: NSManagedObject {
     
     convenience init() {
         let context = DataManager.context
-        let entity = NSEntityDescription.entity(forEntityName: User.entityName, in: context)!
-        
-     //   self.name = name
-       // self.date = date
-       // self.url = audio
-        
+        let entity = NSEntityDescription.entity(forEntityName: Memory.entityName, in: context)!
+
         self.init(entity: entity, insertInto: context)
     }
 
