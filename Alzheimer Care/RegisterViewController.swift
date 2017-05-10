@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 class RegisterViewController: UIViewController {
   
@@ -25,6 +26,31 @@ class RegisterViewController: UIViewController {
     super.viewDidLoad()
     self.setupUI()
   }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        registerForNotifications()
+        
+    }
+    
+    func registerForNotifications() {
+        // Defina o tipo de notificações que você quer permitir
+        let notificationTypes: UNAuthorizationOptions = [.sound, .alert, .badge]
+        
+        // Utilizamos o notification center para solicitar autorização
+        let notificationCenter = UNUserNotificationCenter.current()
+        
+        // Solicitamos autorização
+        notificationCenter.requestAuthorization(options: notificationTypes) {
+            (granted, error) in
+            if granted {
+                print("Autorização concedida :D")
+            } else {
+                print("Autorização negada :(")
+            }
+        }
+    }
   
   // MARK: - Actions
   
@@ -96,3 +122,4 @@ extension RegisterViewController: UIImagePickerControllerDelegate, UINavigationC
     dismiss(animated: true, completion: nil)
   }
 }
+

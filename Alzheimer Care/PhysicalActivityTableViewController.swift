@@ -16,9 +16,17 @@ class PhysicalActivityTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        activities.append(Activity(name: "Correr", time: "13:00", frequency: [.Friday, .Tuesday]))
+        activities.append(Activity(
+            name: "Contrações Abdominais",
+            description: "Para aumentar a força nos músculos abdominais, e reduzir dores nas costas. Respire fundo e contraia os músculos abdominais. Segure por três respirações e depois solte a contração. Repita 10 vezes.",
+            time: "13:00",
+            frequency: [.Tuesday, .Thursday]))
             
-        activities.append(Activity(name: "Jogar Futebol", time: "14:00", frequency: [.Monday, .Wednesday]))
+        activities.append(Activity(
+            name: "Flexão de Parede",
+            description: "Para aumentar a força no peito e ombros, ajudando bastante na flexibilidade dos braços e respiração. Fique a cerca de três pés de distância de uma parede, de frente para a parede, com os pés na largura dos ombros. Incline para a frente e coloque as mãos planas na parede, em linha com seus ombros. Seu corpo deve estar na posição “prancha”, com sua coluna em linha reta, sem ficar arqueado. Incline o seu corpo em direção à parede e, em seguida, empurre para trás. Repita 10 vezes.",
+            time: "14:00",
+            frequency: [.Monday, .Wednesday]))
         
     }
 
@@ -125,24 +133,6 @@ class PhysicalActivityTableViewController: UITableViewController {
      center.add(request)
      } */
     
-    func registerForNotifications() {
-        // Defina o tipo de notificações que você quer permitir
-        let notificationTypes: UNAuthorizationOptions = [.sound, .alert, .badge]
-        
-        // Utilizamos o notification center para solicitar autorização
-        let notificationCenter = UNUserNotificationCenter.current()
-        
-        // Solicitamos autorização
-        notificationCenter.requestAuthorization(options: notificationTypes) {
-            (granted, error) in
-            if granted {
-                print("Autorização concedida :D")
-            } else {
-                print("Autorização negada :(")
-            }
-        }
-    }
-    
     func scheduleNotificationTo10SecondsFromNow(repeating: Bool) {
         
         // Defina o conteúdo da notificação
@@ -150,6 +140,7 @@ class PhysicalActivityTableViewController: UITableViewController {
         content.title = "Title"
         content.subtitle = "Subtitle"
         content.body = "Body body body body"
+        content.sound = UNNotificationSound.default()
         
         // Definimos o intervalo de tempo para disparar a ação
         var timeInterval = 10.0
