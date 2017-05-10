@@ -50,59 +50,14 @@ class Memory {
         
         let month = dateFormatter.string(from: date)
         
-        switch month {
-        case "Jan":
-            return "Janeiro"
-        case "Feb":
-            return "Fevereiro"
-        case "Mar":
-            return "Março"
-        case "Apr":
-            return "Abril"
-        case "May":
-            return "Maio"
-        case "Jun":
-            return "Junho"
-        case "Jul":
-            return "Julho"
-        case "Aug":
-            return "Agosto"
-        case "Sep":
-            return "Setembro"
-        case "Oct":
-            return "Outubro"
-        case "Nov":
-            return "Novembro"
-        case "Dec":
-            return "Dezembro"
-        default:
-            return "Mês Inválido!"
-        }
+        return Dictionaries.month[month]!
     }
     
     // Dá pra criar algo com Enum, mas eu estava sem ideia :/
     private func getWeekDay() -> String {
         dateFormatter.dateFormat = "EEE"
         let weekDay = dateFormatter.string(from: date)
-        
-        switch weekDay {
-        case "Sun":
-            return "Domingo"
-        case "Mon":
-            return "Segunda"
-        case "Tue":
-            return "Terça"
-        case "Wed":
-            return "Quarta"
-        case "Thu":
-            return "Quinta"
-        case "Fri":
-            return "Sexta"
-        case "Sat":
-            return "Sábado"
-        default:
-            return "Dia da Semana Inválido!"
-        }
+        return Dictionaries.weekDay[weekDay]!
     }
     
 }
