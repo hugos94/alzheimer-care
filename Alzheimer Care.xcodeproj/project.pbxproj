@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F6E35DD1EC20B6D002AD4BE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F6E35DC1EC20B6D002AD4BE /* Default-568h@2x.png */; };
 		3FBFD12F1EC0A23A009165EF /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */; };
 		3FDA8B091EC1EBC400B36C55 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8B081EC1EBC400B36C55 /* DataManager.swift */; };
 		3FDA8B0E1EC1EDAA00B36C55 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8B0A1EC1EDAA00B36C55 /* User+CoreDataClass.swift */; };
@@ -56,7 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F6E35DC1EC20B6D002AD4BE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		3FDA8B081EC1EBC400B36C55 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		3FDA8B0A1EC1EDAA00B36C55 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -127,6 +125,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F9A87381EC32EBE00C7A6F5 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				3FFA3E621EC0A95E00A1148E /* MemoryTableViewCell.swift */,
+				F53118D21EBEC19C0035DA11 /* AddMemoryViewController.swift */,
+				F53118D41EBEC5460035DA11 /* TimelineTableViewController.swift */,
+			);
+			name = Memory;
+			sourceTree = "<group>";
+		};
+		3F9A87391EC32ECC00C7A6F5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F503637A1EBD662A00ABF756 /* HomeViewController.swift */,
+				F503637C1EBD692100ABF756 /* RegisterViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		3F9A873A1EC32ED800C7A6F5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		3F9A873B1EC32EEC00C7A6F5 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				F53118D61EBEC5900035DA11 /* ActivitiesViewController.swift */,
+				F52600471EC13A74004232EF /* PhysicalActivityTableViewCell.swift */,
+				F52600491EC13A8E004232EF /* PhysicalActivityTableViewController.swift */,
+			);
+			name = Activities;
+			sourceTree = "<group>";
+		};
 		65C7AF6D9166F177AEF0FF71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,15 +188,10 @@
 		F58FAA001EBE8E2F00BC31D2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F53118D21EBEC19C0035DA11 /* AddMemoryViewController.swift */,
-				F503637A1EBD662A00ABF756 /* HomeViewController.swift */,
-				F503637C1EBD692100ABF756 /* RegisterViewController.swift */,
-				F53118D41EBEC5460035DA11 /* TimelineTableViewController.swift */,
-				F53118D61EBEC5900035DA11 /* ActivitiesViewController.swift */,
-				3FBFD12E1EC0A23A009165EF /* ExtensionViewController.swift */,
-				3FFA3E621EC0A95E00A1148E /* MemoryTableViewCell.swift */,
-				F52600471EC13A74004232EF /* PhysicalActivityTableViewCell.swift */,
-				F52600491EC13A8E004232EF /* PhysicalActivityTableViewController.swift */,
+				3F9A87381EC32EBE00C7A6F5 /* Memory */,
+				3F9A87391EC32ECC00C7A6F5 /* Home */,
+				3F9A873B1EC32EEC00C7A6F5 /* Activities */,
+				3F9A873A1EC32ED800C7A6F5 /* Extensions */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -205,7 +235,6 @@
 		F5ED00B31EBD59B10085A171 = {
 			isa = PBXGroup;
 			children = (
-				3F6E35DC1EC20B6D002AD4BE /* Default-568h@2x.png */,
 				F5ED00BE1EBD59B10085A171 /* Alzheimer Care */,
 				F5ED00D61EBD59B10085A171 /* Alzheimer CareTests */,
 				F5ED00E11EBD59B10085A171 /* Alzheimer CareUITests */,
@@ -372,7 +401,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5ED00CD1EBD59B10085A171 /* LaunchScreen.storyboard in Resources */,
-				3F6E35DD1EC20B6D002AD4BE /* Default-568h@2x.png in Resources */,
 				F5ED00CA1EBD59B10085A171 /* Assets.xcassets in Resources */,
 				F5ED00C51EBD59B10085A171 /* Main.storyboard in Resources */,
 			);

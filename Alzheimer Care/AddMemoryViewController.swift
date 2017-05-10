@@ -37,6 +37,8 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
         
         self.hideKeyboardWhenTappedAround()
         
+        playButton.isHidden = true
+        
         actualDate = Date()
         
         audioName = "\(actualDate.description).m4a"
@@ -89,7 +91,7 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
         if audioRecorder == nil {
             self.recordButton.setTitle("Stop", for: UIControlState.normal)
             self.recordButton.backgroundColor = UIColor(red: 119.0/255.0, green: 119.0/255.0, blue: 119.0/255.0, alpha: 1.0)
-            self.startRecording()
+            self.startSession()
         } else {
             self.recordButton.setTitle("Record", for: UIControlState.normal)
             self.recordButton.backgroundColor = UIColor(red: 221.0/255.0, green: 27.0/255.0, blue: 50.0/255.0, alpha: 1.0)
@@ -97,7 +99,7 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
         }
     }
     
-    func startRecording() {
+    func startSession() {
         let audioSession = AVAudioSession.sharedInstance()
         do {
             try audioSession.overrideOutputAudioPort(AVAudioSessionPortOverride.speaker)
@@ -124,6 +126,7 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
         audioRecorder.stop()
         if success {
             print(success)
+            playButton.isHidden = false
         } else {
             audioRecorder = nil
             print("Something Wrong.")

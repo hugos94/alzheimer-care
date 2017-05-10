@@ -49,9 +49,6 @@ class ActivitiesViewController: UIViewController,CLLocationManagerDelegate{
         }
     }
     
-    
-    
-    
     func startScanning() {
         print("start Scanning")
         

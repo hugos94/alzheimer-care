@@ -23,7 +23,7 @@ class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        createRecordSession()
+        startSession()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -71,7 +71,7 @@ class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate,
     
     // MARK: - AV Audio Functions
     
-    func createRecordSession() {
+    func startSession() {
         recordingSession = AVAudioSession.sharedInstance()
         do {
             try recordingSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
