@@ -12,7 +12,7 @@ import UserNotifications
 
 class RegisterViewController: UIViewController {
   
-  // MARK: - Properties
+  // MARK: - Properties test
   
   @IBOutlet weak var profilePicture: UIImageView!
   @IBOutlet weak var userNameTextField: UITextField!
