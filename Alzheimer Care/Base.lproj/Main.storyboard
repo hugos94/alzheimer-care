@@ -413,7 +413,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Emergência!"/>
                                 <connections>
-                                    <action selector="makeEmergencyCall:" destination="QHe-zz-uYD" eventType="touchUpInside" id="KLw-k0-vj6"/>
+                                    <action selector="onEmergencyCall:" destination="QHe-zz-uYD" eventType="touchUpInside" id="GuG-Es-M1e"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ERm-JD-qMn">
