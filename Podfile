@@ -6,6 +6,8 @@ target 'Alzheimer Care' do
   use_frameworks!
 
   # Pods for Alzheimer Care
+  pod 'EstimoteSDK'
+  pod 'EstimoteIndoorSDK'
   target 'Alzheimer CareTests' do
     inherit! :search_paths
     # Pods for testing
