@@ -132,9 +132,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
                 }
                 
             case .far:
-                
-                self.view.backgroundColor = UIColor.blue
-                
                 if self.auxLonge < 10{
                     self.auxLonge += 1
                     self.auxUnknow = 0
