@@ -74,23 +74,35 @@ class RegisterViewController: UIViewController {
   }
   
   @IBAction func registerButton(_ sender: Any) {
-    guard let name = userNameTextField.text, let number = userNumberTextField.text, !name.isEmpty, !number.isEmpty else {
-      let alert = UIAlertController(title: "Erro!", message: "Preencha todos os campos :D", preferredStyle: .actionSheet)
-      alert.addAction(OKButton())
-      return present(alert, animated: true, completion: nil)
+    print("----- Conferindo campos")
+    guard let name = userNameTextField.text,
+      let number = userNumberTextField.text,
+      !name.isEmpty, !number.isEmpty else {
+        let alert = UIAlertController(title: "Erro!", message: "Preencha todos os campos :D", preferredStyle: .actionSheet)
+        alert.addAction(OKButton())
+        return present(alert, animated: true, completion: nil)
     }
     
-    let newUser = User(name, number)
+    print("----- Criando usuário")
+    let user = User(name, number)
     
-    if UserDAO.create(newUser), let image = profilePicture.image {
-      guard let imgData = UIImageJPEGRepresentation(image, 1) as NSData? else {
-        NSLog("Image conversion error")
-        return
-      }
+    print("----- Conferindo imagem")
+    if let image = profilePicture.image, let imgData = UIImageJPEGRepresentation(image, 1) as NSData? {
+      let picture = ProfilePicture(imgData)
+      print("----- Adicionando imagem e user no banco")
       
-      let picture = ProfilePicture(imgData, newUser)
+      user.picture = picture
+      picture.user = user
+      
+      if UserDAO.create(user) && PictureDAO.create(picture) {
+        print("----- Imagem e user adicionados")
+        UserDefaults.standard.set(user.objectID.uriRepresentation(), forKey: "ACTIVE_USER_URL")
+      }
+    } else {
+      NSLog("Something wrong happened Yo!")
     }
     
+    print("----- Fim do register")
     dismiss(animated: true, completion: nil)
   }
   

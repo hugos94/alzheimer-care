@@ -10,6 +10,7 @@
 		3F1A33511EC3597100DC771A /* DataAccessObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A33501EC3597100DC771A /* DataAccessObject.swift */; };
 		3F1A33531EC35B6600DC771A /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A33521EC35B6600DC771A /* UserDAO.swift */; };
 		3F4D2C231EC489C700BD3AD5 /* PhysicalActivityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D2C221EC489C700BD3AD5 /* PhysicalActivityDetailsViewController.swift */; };
+		3F4D2C251EC48BF500BD3AD5 /* PictureDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4D2C241EC48BF500BD3AD5 /* PictureDAO.swift */; };
 		3F9A873D1EC3401C00C7A6F5 /* Dictionaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A873C1EC3401C00C7A6F5 /* Dictionaries.swift */; };
 		3F9A874C1EC3474D00C7A6F5 /* Memory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A874A1EC3474D00C7A6F5 /* Memory+CoreDataClass.swift */; };
 		3F9A874D1EC3474D00C7A6F5 /* Memory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A874B1EC3474D00C7A6F5 /* Memory+CoreDataProperties.swift */; };
@@ -65,6 +66,7 @@
 		3F1A33501EC3597100DC771A /* DataAccessObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccessObject.swift; sourceTree = "<group>"; };
 		3F1A33521EC35B6600DC771A /* UserDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
 		3F4D2C221EC489C700BD3AD5 /* PhysicalActivityDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalActivityDetailsViewController.swift; sourceTree = "<group>"; };
+		3F4D2C241EC48BF500BD3AD5 /* PictureDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureDAO.swift; sourceTree = "<group>"; };
 		3F9A873C1EC3401C00C7A6F5 /* Dictionaries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionaries.swift; sourceTree = "<group>"; };
 		3F9A874A1EC3474D00C7A6F5 /* Memory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Memory+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3F9A874B1EC3474D00C7A6F5 /* Memory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Memory+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				3FFA3E641EC0B13400A1148E /* MemoryDAO.swift */,
 				3F1A33501EC3597100DC771A /* DataAccessObject.swift */,
 				3F1A33521EC35B6600DC771A /* UserDAO.swift */,
+				3F4D2C241EC48BF500BD3AD5 /* PictureDAO.swift */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -619,6 +622,7 @@
 				3FDA8B0F1EC1EDAA00B36C55 /* User+CoreDataProperties.swift in Sources */,
 				3F9A874C1EC3474D00C7A6F5 /* Memory+CoreDataClass.swift in Sources */,
 				3FDA8B0E1EC1EDAA00B36C55 /* User+CoreDataClass.swift in Sources */,
+				3F4D2C251EC48BF500BD3AD5 /* PictureDAO.swift in Sources */,
 				3FBFD12F1EC0A23A009165EF /* ExtensionViewController.swift in Sources */,
 				3F9A874D1EC3474D00C7A6F5 /* Memory+CoreDataProperties.swift in Sources */,
 				F503637B1EBD662A00ABF756 /* HomeViewController.swift in Sources */,

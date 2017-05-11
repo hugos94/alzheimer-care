@@ -39,7 +39,7 @@ class HomeViewController: UIViewController {
     
     if let objIdURL = UserDefaults.standard.url(forKey: "ACTIVE_USER_URL"), let psc = context.persistentStoreCoordinator,
       let objId = psc.managedObjectID(forURIRepresentation: objIdURL), let user = context.object(with: objId) as? User {
-      initialInformationTextView.text = "Olá, \(user.name)!"
+      initialInformationTextView.text = "Olá, \(user.name!)!"
     } else {
       NSLog("No active user saved -> entering register view")
       performSegue(withIdentifier: "registerSegue", sender: self)

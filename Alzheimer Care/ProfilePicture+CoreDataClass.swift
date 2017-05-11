@@ -18,13 +18,15 @@ public class ProfilePicture: NSManagedObject {
     let entity = NSEntityDescription.entity(forEntityName: ProfilePicture.entityName, in: context)!
     
     self.init(entity: entity, insertInto: context)
+    print("----- ProfilePicture Coredata inicializado")
   }
   
-  convenience init(_ imageData: NSData, _ user: User) {
-    self.init()
+  convenience init(_ imageData: NSData) {
+    let context = DataManager.context
+    let entity = NSEntityDescription.entity(forEntityName: ProfilePicture.entityName, in: context)!
+    
+    self.init(entity: entity, insertInto: context)
     
     self.imageData = imageData
-    self.user = user
-    user.picture = self
   }
 }
