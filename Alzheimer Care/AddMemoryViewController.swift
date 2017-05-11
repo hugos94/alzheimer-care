@@ -89,12 +89,12 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
     
     @IBAction func recordAudio(_ sender: Any) {
         if audioRecorder == nil {
-            self.recordButton.setTitle("Stop", for: UIControlState.normal)
-            self.recordButton.backgroundColor = UIColor(red: 119.0/255.0, green: 119.0/255.0, blue: 119.0/255.0, alpha: 1.0)
+            self.recordButton.setAttributedTitle(NSAttributedString(string: "Parar"), for: .normal)
+            self.recordButton.setImage(#imageLiteral(resourceName: "stop"), for: .normal)
             self.startSession()
         } else {
-            self.recordButton.setTitle("Record", for: UIControlState.normal)
-            self.recordButton.backgroundColor = UIColor(red: 221.0/255.0, green: 27.0/255.0, blue: 50.0/255.0, alpha: 1.0)
+            self.recordButton.setAttributedTitle(NSAttributedString(string: "Gravar"), for: .normal)
+            self.recordButton.setImage(#imageLiteral(resourceName: "record"), for: .normal)
             self.finishRecording(success: true)
         }
     }
