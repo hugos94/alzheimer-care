@@ -9,44 +9,32 @@
 import Foundation
 import CoreData
 
-class MemoryDAO {
-    
+class MemoryDAO: DataAccessObject {
+    public typealias E = Memory
     static private let dateFormatter = DateFormatter()
     
-    // ADD
-    static func insertion(memory: Memory) -> Bool {
-        return DataManager.insert(memory)
+    public static func create(_ entity: Memory) -> Bool {
+        return DataManager.insert(entity)
     }
     
-    // REMOVE
-    static func delete(memory: Memory) -> Bool {
-        return DataManager.delete(memory)
+    public static func delete(_ entity: Memory) -> Bool {
+        return DataManager.delete(entity)
     }
     
-    // SEARCH
-    static func getMemories() -> [Memory] {
+    public static func read() -> [Memory] {
         var memories = [Memory]()
         
-        let request: NSFetchRequest<Memory> = Memory.fetchRequest()
+        let req: NSFetchRequest<Memory> = Memory.fetchRequest()
+        req.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
         
-        request.sortDescriptors = [
-            //NSSortDescriptor(key: "name", ascending: true),
-            NSSortDescriptor(key: "name", ascending: true)
-        ]
-        
-        // NSPredicate Cheatsheets
-        // Criar predicados para refinar a busca
-        // request.predicate = NSPredicate(format: "year == %@", 1999)
-        
-        do{
-            try memories = DataManager.persistentContainer.viewContext.fetch(request)
+        do {
+            try memories = DataManager.context.fetch(req)
         } catch let error {
-            print("Erro ao buscar: \(error.localizedDescription)")
+            print("Something bad happened: \(error.localizedDescription)")
         }
         
         return memories
     }
-    
     
     static func getFormattedData(date: Date) -> String {
         return "\(getWeekDay(date)), \(getDay(date)) de \(getMonth(date)) de \(getYear(date)) - \(getTime(date))"
@@ -73,8 +61,8 @@ class MemoryDAO {
         let month = dateFormatter.string(from: date )
         return Dictionaries.month[month]!
     }
-
-     static private func getWeekDay(_ date: Date) -> String {
+    
+    static private func getWeekDay(_ date: Date) -> String {
         dateFormatter.dateFormat = "EEE"
         let weekDay = dateFormatter.string(from: date )
         return Dictionaries.weekDay[weekDay]!

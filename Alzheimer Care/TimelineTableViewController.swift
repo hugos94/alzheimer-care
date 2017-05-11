@@ -19,7 +19,7 @@ class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate,
     var audioPlayer : AVAudioPlayer!
     
     func updateList() {
-        listOfMemories = MemoryDAO.getMemories()
+        listOfMemories = MemoryDAO.read()
     }
     
     // MARK: - System Functions
@@ -72,7 +72,7 @@ class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate,
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            if MemoryDAO.delete(memory: listOfMemories[indexPath.row]){
+            if MemoryDAO.delete(listOfMemories[indexPath.row]){
                 updateList()
                 tableView.deleteRows(at: [indexPath], with: .fade)
             }
