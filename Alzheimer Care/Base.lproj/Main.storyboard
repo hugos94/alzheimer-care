@@ -24,54 +24,44 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ldG-eh-whN" id="kNb-G9-PnQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-pH-V5N">
-                                            <rect key="frame" x="8" y="8" width="359" height="61"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-pH-V5N">
+                                            <rect key="frame" x="8" y="8" width="359" height="53"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NdF-Bo-jgw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="304.5" height="61"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="309" height="53"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da Recordação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzg-OX-I0A">
-                                                            <rect key="frame" x="0.0" y="0.0" width="304.5" height="26.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="206" height="23"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de Gravação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epq-8m-0WN">
-                                                            <rect key="frame" x="0.0" y="34.5" width="304.5" height="26.5"/>
+                                                            <rect key="frame" x="0.0" y="31" width="137" height="22"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="epq-8m-0WN" secondAttribute="trailing" id="BIx-8d-5ny"/>
-                                                        <constraint firstItem="epq-8m-0WN" firstAttribute="leading" secondItem="NdF-Bo-jgw" secondAttribute="leading" id="Pjh-GJ-aoV"/>
-                                                        <constraint firstAttribute="trailing" secondItem="gzg-OX-I0A" secondAttribute="trailing" id="jmo-fq-xeh"/>
-                                                        <constraint firstItem="gzg-OX-I0A" firstAttribute="leading" secondItem="NdF-Bo-jgw" secondAttribute="leading" id="u6v-6Z-XNH"/>
-                                                    </constraints>
                                                 </stackView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2B-5V-CJr">
-                                                    <rect key="frame" x="312.5" y="0.0" width="46.5" height="61"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <state key="normal" title="Play"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2B-5V-CJr">
+                                                    <rect key="frame" x="317" y="0.0" width="42" height="53"/>
+                                                    <state key="normal" image="playRecord"/>
                                                     <connections>
                                                         <action selector="playButton:" destination="ldG-eh-whN" eventType="touchUpInside" id="dBX-du-TuY"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="NdF-Bo-jgw" firstAttribute="leading" secondItem="nfO-pH-V5N" secondAttribute="leading" id="5Lo-0R-kUo"/>
-                                                <constraint firstItem="NdF-Bo-jgw" firstAttribute="top" secondItem="nfO-pH-V5N" secondAttribute="top" id="a5d-pf-mo6"/>
-                                            </constraints>
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="nfO-pH-V5N" firstAttribute="trailing" secondItem="kNb-G9-PnQ" secondAttribute="trailingMargin" id="9Ie-MX-RkE"/>
-                                        <constraint firstItem="nfO-pH-V5N" firstAttribute="top" secondItem="kNb-G9-PnQ" secondAttribute="topMargin" id="TOC-Gk-1rb"/>
-                                        <constraint firstItem="nfO-pH-V5N" firstAttribute="leading" secondItem="kNb-G9-PnQ" secondAttribute="leadingMargin" id="rxm-dl-YLq"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="nfO-pH-V5N" secondAttribute="bottom" id="3eY-FX-FYF"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nfO-pH-V5N" secondAttribute="trailing" id="h4x-hW-UwG"/>
+                                        <constraint firstItem="nfO-pH-V5N" firstAttribute="top" secondItem="kNb-G9-PnQ" secondAttribute="topMargin" id="q5K-zV-kxG"/>
+                                        <constraint firstItem="nfO-pH-V5N" firstAttribute="leading" secondItem="kNb-G9-PnQ" secondAttribute="leadingMargin" id="vjG-Yz-mwU"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -88,7 +78,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Linha do Tempo" id="Y4N-Nr-Vxo">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="lhg-bR-DW0"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aRQ-LW-tCC">
+                        <barButtonItem key="rightBarButtonItem" image="addRecord" id="aRQ-LW-tCC">
                             <connections>
                                 <segue destination="t15-uR-rEI" kind="show" identifier="addMemorySegue" id="diX-BK-cMx"/>
                             </connections>
@@ -111,31 +101,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoC-v6-I1G">
-                                <rect key="frame" x="16" y="110" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Gravar"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome da Memória" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xdp-hL-CVu">
+                                <rect key="frame" x="16" y="80" width="343" height="64"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="TJV-IA-y2J"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VoC-v6-I1G">
+                                <rect key="frame" x="16" y="160" width="343" height="25"/>
+                                <state key="normal" image="record">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Gravar">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="recordAudio:" destination="kZS-LW-lRW" eventType="touchUpInside" id="ete-8D-ay8"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome da Memória" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xdp-hL-CVu">
-                                <rect key="frame" x="16" y="72" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1y-8H-RbF">
-                                <rect key="frame" x="16" y="148" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Ouvir"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P1y-8H-RbF">
+                                <rect key="frame" x="16" y="201" width="343" height="25"/>
+                                <state key="normal" image="play">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Ouvir">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="playAudio:" destination="kZS-LW-lRW" eventType="touchUpInside" id="Oxc-tL-Slc"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xdp-hL-CVu" firstAttribute="leading" secondItem="Pc2-5k-G8y" secondAttribute="leadingMargin" id="2Uc-Ku-PMw"/>
+                            <constraint firstItem="P1y-8H-RbF" firstAttribute="top" secondItem="VoC-v6-I1G" secondAttribute="bottom" constant="16" id="79l-Ya-Zl5"/>
+                            <constraint firstItem="VoC-v6-I1G" firstAttribute="top" secondItem="xdp-hL-CVu" secondAttribute="bottom" constant="16" id="Ljb-7j-adE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VoC-v6-I1G" secondAttribute="trailing" id="QgH-GM-k0g"/>
+                            <constraint firstItem="xdp-hL-CVu" firstAttribute="trailing" secondItem="Pc2-5k-G8y" secondAttribute="trailingMargin" id="Sdb-Vw-ohW"/>
+                            <constraint firstItem="VoC-v6-I1G" firstAttribute="leading" secondItem="Pc2-5k-G8y" secondAttribute="leadingMargin" id="VUo-YZ-6sX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P1y-8H-RbF" secondAttribute="trailing" id="tXv-7d-48O"/>
+                            <constraint firstItem="xdp-hL-CVu" firstAttribute="top" secondItem="qBN-zg-IF3" secondAttribute="bottom" constant="16" id="vw9-g4-EMh"/>
+                            <constraint firstItem="P1y-8H-RbF" firstAttribute="leading" secondItem="Pc2-5k-G8y" secondAttribute="leadingMargin" id="wja-1N-7Jy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0eW-iO-aYx">
                         <barButtonItem key="leftBarButtonItem" title="Voltar" id="TuB-Fh-IFh">
@@ -220,7 +238,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oGV-hu-OEO" id="BEa-JC-77e">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da atividade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjR-e9-Yby">
@@ -538,8 +556,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addRecord" width="25" height="25"/>
         <image name="altere" width="25" height="25"/>
         <image name="home" width="25" height="25"/>
+        <image name="play" width="25" height="25"/>
+        <image name="playRecord" width="25" height="25"/>
+        <image name="record" width="25" height="25"/>
         <image name="timeline" width="25" height="25"/>
     </resources>
 </document>
