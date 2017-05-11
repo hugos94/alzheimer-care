@@ -10,9 +10,10 @@
 
 import UIKit
 import CoreLocation
+import UserNotifications
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate {
-    
+
     // MARK: - Properties
     
     var auxLonge = 0
@@ -175,5 +176,27 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             print("found only one beacon")
         }
     }
+    
+    // MARK: - Notification Functions
+    
+    // 2: Solicitar autorização para enviar notificações
+    func registerForNotifications() {
+        // Defina o tipo de notificações que você quer permitir
+        let notificationTypes: UNAuthorizationOptions = [.sound, .alert, .badge]
+        
+        // Utilizamos o notification center para solicitar autorização
+        let notificationCenter = UNUserNotificationCenter.current()
+        
+        // Solicitamos autorização
+        notificationCenter.requestAuthorization(options: notificationTypes) {
+            (granted, error) in
+            if granted {
+                print("Autorização concedida :D")
+            } else {
+                print("Autorização negada :(")
+            }
+        }
+    }
+    
     
 }
