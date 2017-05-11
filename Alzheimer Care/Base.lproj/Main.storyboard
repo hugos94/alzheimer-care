@@ -24,23 +24,23 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ldG-eh-whN" id="kNb-G9-PnQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-pH-V5N">
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-pH-V5N">
                                             <rect key="frame" x="8" y="8" width="359" height="53"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NdF-Bo-jgw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="309" height="53"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="309.5" height="53"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da Recordação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzg-OX-I0A">
-                                                            <rect key="frame" x="0.0" y="0.0" width="206" height="23"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="205.5" height="22.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de Gravação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epq-8m-0WN">
-                                                            <rect key="frame" x="0.0" y="31" width="137" height="22"/>
+                                                            <rect key="frame" x="0.0" y="30.5" width="136.5" height="22.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -48,7 +48,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2B-5V-CJr">
-                                                    <rect key="frame" x="317" y="0.0" width="42" height="53"/>
+                                                    <rect key="frame" x="317.5" y="0.0" width="41.5" height="53"/>
                                                     <state key="normal" image="playRecord"/>
                                                     <connections>
                                                         <action selector="playButton:" destination="ldG-eh-whN" eventType="touchUpInside" id="dBX-du-TuY"/>
@@ -238,7 +238,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oGV-hu-OEO" id="BEa-JC-77e">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da atividade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjR-e9-Yby">
@@ -439,10 +439,22 @@
                                     <constraint firstAttribute="width" secondItem="ge5-6O-zeL" secondAttribute="height" multiplier="1:1" id="ne2-Rd-ljm"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8y-Kx-dnF">
-                                <rect key="frame" x="16" y="572" width="343" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="Emergência!"/>
+                            <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m8y-Kx-dnF">
+                                <rect key="frame" x="16" y="538" width="343" height="64"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.051290923320000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="pee-wp-guB"/>
+                                </constraints>
+                                <state key="normal" image="Siren">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="    Emergência!">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="onEmergencyCall:" destination="QHe-zz-uYD" eventType="touchUpInside" id="GuG-Es-M1e"/>
                                 </connections>
@@ -451,13 +463,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ge5-6O-zeL" firstAttribute="top" secondItem="C8s-il-1hW" secondAttribute="bottom" constant="8" id="2pr-la-3Ze"/>
-                            <constraint firstItem="m8y-Kx-dnF" firstAttribute="trailing" secondItem="Xyc-wn-bUZ" secondAttribute="trailingMargin" id="Bez-vh-6AJ"/>
                             <constraint firstItem="ge5-6O-zeL" firstAttribute="centerX" secondItem="Xyc-wn-bUZ" secondAttribute="centerX" id="CtH-Bs-uav"/>
-                            <constraint firstItem="m8y-Kx-dnF" firstAttribute="leading" secondItem="Xyc-wn-bUZ" secondAttribute="leadingMargin" id="Q9W-fQ-6Xc"/>
-                            <constraint firstItem="g30-hK-SuT" firstAttribute="top" secondItem="m8y-Kx-dnF" secondAttribute="bottom" constant="16" id="ZjT-UF-lye"/>
+                            <constraint firstItem="m8y-Kx-dnF" firstAttribute="leading" secondItem="Xyc-wn-bUZ" secondAttribute="leadingMargin" id="HVI-lK-VW0"/>
                             <constraint firstItem="JmE-1N-FSK" firstAttribute="top" secondItem="ge5-6O-zeL" secondAttribute="bottom" constant="16" id="bOn-fy-sVV"/>
+                            <constraint firstItem="g30-hK-SuT" firstAttribute="top" secondItem="m8y-Kx-dnF" secondAttribute="bottom" constant="16" id="lXF-xE-MgU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JmE-1N-FSK" secondAttribute="trailing" id="vXC-37-8ZT"/>
                             <constraint firstItem="JmE-1N-FSK" firstAttribute="leading" secondItem="Xyc-wn-bUZ" secondAttribute="leadingMargin" id="wdW-H8-e21"/>
+                            <constraint firstItem="m8y-Kx-dnF" firstAttribute="trailing" secondItem="Xyc-wn-bUZ" secondAttribute="trailingMargin" id="yMK-3n-RYl"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home" id="KKi-de-qdO"/>
@@ -556,6 +568,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Siren" width="25" height="25"/>
         <image name="addRecord" width="25" height="25"/>
         <image name="altere" width="25" height="25"/>
         <image name="home" width="25" height="25"/>
