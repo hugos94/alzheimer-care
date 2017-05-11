@@ -12,8 +12,8 @@ class Activity {
     
     let name : String
     let description : String
-    let time : String
-    let frequency : [DayOfWeek]
+    var time : String
+    var frequency : [DayOfWeek]
     
     init(name : String, description: String, time: String, frequency : [DayOfWeek]){
         self.name = name
