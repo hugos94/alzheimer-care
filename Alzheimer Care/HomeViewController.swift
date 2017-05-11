@@ -14,6 +14,8 @@ import UserNotifications
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate {
   
+  @IBOutlet weak var profileImage: UIImageView!
+  @IBOutlet weak var descriptionLabel: UILabel!
   // MARK: - Properties
   
   var auxLonge = 0
@@ -25,8 +27,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
   var activeUser: User?
   
   let context = DataManager.context
-  
-  @IBOutlet weak var initialInformationTextView: UITextView!
   
   // MARK: - Actions
   
@@ -61,6 +61,12 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     locationManager = CLLocationManager()
     locationManager.delegate = self
     locationManager.requestAlwaysAuthorization()
+    
+    self.profileImage.layer.borderWidth = 1
+    self.profileImage.layer.masksToBounds = false
+    self.profileImage.layer.borderColor = UIColor.black.cgColor
+    self.profileImage.layer.cornerRadius = self.profileImage.frame.height / 2
+    self.profileImage.clipsToBounds = true
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -69,7 +75,8 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     if let objIdURL = UserDefaults.standard.url(forKey: "ACTIVE_USER_URL"), let psc = context.persistentStoreCoordinator,
       let objId = psc.managedObjectID(forURIRepresentation: objIdURL), let user = context.object(with: objId) as? User {
       self.activeUser = user
-      initialInformationTextView.text = "Olá, \(user.name!)!"
+      descriptionLabel.text = "Olá, \(user.name!)!"
+      profileImage.image = UIImage(data: (user.picture!.imageData)! as Data)
     } else {
       NSLog("No active user saved -> entering register view")
       performSegue(withIdentifier: "registerSegue", sender: self)
