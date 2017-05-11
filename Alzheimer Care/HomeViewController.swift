@@ -4,9 +4,13 @@
 //
 //  Created by Hugo Santos Piauilino Neto on 05/05/17.
 //  Copyright © 2017 Hugo Santos Piauilino. All rights reserved.
+//  "B9407F30-F5F8-466E-AFF9-25556B57FE6D"
+//  maior = 50668 menor= 34186
 //
 
 import UIKit
+import CoreLocation
+import UserNotifications
 
 class HomeViewController: UIViewController {
   

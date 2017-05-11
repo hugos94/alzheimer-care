@@ -21,7 +21,6 @@
 		3FDA8B0F1EC1EDAA00B36C55 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8B0B1EC1EDAA00B36C55 /* User+CoreDataProperties.swift */; };
 		3FDA8B101EC1EDAA00B36C55 /* ProfilePicture+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8B0C1EC1EDAA00B36C55 /* ProfilePicture+CoreDataClass.swift */; };
 		3FDA8B111EC1EDAA00B36C55 /* ProfilePicture+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA8B0D1EC1EDAA00B36C55 /* ProfilePicture+CoreDataProperties.swift */; };
-		3FFA3E611EC0A6C700A1148E /* Memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA3E601EC0A6C700A1148E /* Memory.swift */; };
 		3FFA3E631EC0A95E00A1148E /* MemoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA3E621EC0A95E00A1148E /* MemoryTableViewCell.swift */; };
 		3FFA3E651EC0B13400A1148E /* MemoryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA3E641EC0B13400A1148E /* MemoryDAO.swift */; };
 		D16805E140C94324F4514DC1 /* Pods_Alzheimer_CareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB93E27C03ECA1D0146C305 /* Pods_Alzheimer_CareTests.framework */; };
@@ -77,7 +76,6 @@
 		3FDA8B0B1EC1EDAA00B36C55 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3FDA8B0C1EC1EDAA00B36C55 /* ProfilePicture+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfilePicture+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3FDA8B0D1EC1EDAA00B36C55 /* ProfilePicture+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProfilePicture+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3FFA3E601EC0A6C700A1148E /* Memory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Memory.swift; sourceTree = "<group>"; };
 		3FFA3E621EC0A95E00A1148E /* MemoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryTableViewCell.swift; sourceTree = "<group>"; };
 		3FFA3E641EC0B13400A1148E /* MemoryDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryDAO.swift; sourceTree = "<group>"; };
 		5126C331EAE9282F58C85026 /* Pods-Alzheimer CareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alzheimer CareUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alzheimer CareUITests/Pods-Alzheimer CareUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -254,7 +252,6 @@
 				3F9A874F1EC34AB400C7A6F5 /* VO */,
 				F5ED00C61EBD59B10085A171 /* Alzheimer_Care.xcdatamodeld */,
 				F52600451EC139EC004232EF /* Activity.swift */,
-				3FFA3E601EC0A6C700A1148E /* Memory.swift */,
 				F526004C1EC14C7B004232EF /* Enums.swift */,
 				3FDA8B081EC1EBC400B36C55 /* DataManager.swift */,
 				3F9A873C1EC3401C00C7A6F5 /* Dictionaries.swift */,
@@ -607,7 +604,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F1A33511EC3597100DC771A /* DataAccessObject.swift in Sources */,
-				3FFA3E611EC0A6C700A1148E /* Memory.swift in Sources */,
 				3FDA8B091EC1EBC400B36C55 /* DataManager.swift in Sources */,
 				F5ED00C01EBD59B10085A171 /* AppDelegate.swift in Sources */,
 				3FFA3E631EC0A95E00A1148E /* MemoryTableViewCell.swift in Sources */,

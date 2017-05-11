@@ -183,7 +183,7 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
             memory.date = actualDate
             memory.url = String(describing: audioRecorder.url)
 
-            if MemoryDAO.insertion(memory: memory) {
+            if MemoryDAO.create(memory) {
                 print("A memória \(memory.name!) foi inserida com sucesso!")
             } else {
                 print("Não foi possível inserir a memória \(memory.name!)!")
