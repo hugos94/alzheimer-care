@@ -68,12 +68,6 @@ class PhysicalActivityTableViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        //registerForNotifications()
-        
-        
-        
-        scheduleNotificationTo10SecondsFromNow(repeating: false)
-        
         /* let content = UNMutableNotificationContent()
          content.title = NSString.localizedUserNotificationString(forKey: "Wake up!", arguments: nil)
          content.body = NSString.localizedUserNotificationString(forKey: "Rise and shine! It's morning time!", arguments: nil)
@@ -132,53 +126,6 @@ class PhysicalActivityTableViewController: UITableViewController {
      let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
      center.add(request)
      } */
-    
-    func scheduleNotificationTo10SecondsFromNow(repeating: Bool) {
-        
-        // Defina o conteúdo da notificação
-        let content = UNMutableNotificationContent()
-        content.title = "Title"
-        content.subtitle = "Subtitle"
-        content.body = "Body body body body"
-        content.sound = UNNotificationSound.default()
-        
-        // Definimos o intervalo de tempo para disparar a ação
-        var timeInterval = 10.0
-        if repeating {
-            // Se a notificação for se repetir o mínimo é de 60 segundos
-            timeInterval = 60.0
-        }
-        
-        // Defina o gatilho da notificação
-        // O gatilho pode ser de várias formas, uma delas é intervalo de tempo
-        let trigger = UNTimeIntervalNotificationTrigger(
-            timeInterval: timeInterval,
-            repeats: repeating
-        )
-        
-        // Crie um request de notificação com
-        //  - Identificação: identifica a notificação unicamente
-        //  - Conteúdo: define o conteúdo da notificação
-        //  - Gatilho: define quando a notificação será ativada
-        let request = UNNotificationRequest(
-            identifier: "10seconds.notification",
-            content: content,
-            trigger: trigger
-        )
-        
-        // Pegue a instância unica do notification center no app
-        let notificationCenter = UNUserNotificationCenter.current()
-        
-        
-        // Aqui só removemos as notificações anteriores
-        notificationCenter.removeAllPendingNotificationRequests()
-        
-        // Agora adicionamos nossa request de notificação no notification center
-        notificationCenter.add(request) { (error) in
-            print("Ops, temos um erro aqui! Veja: \(error)")
-        }
-    }
-    
 
     /*
     // Override to support conditional editing of the table view.

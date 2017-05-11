@@ -59,7 +59,7 @@ class PhysicalActivityDetailsViewController: UIViewController {
     
     print("Entrou aqui")
     
-    dismiss(animated: true, completion: nil)
+    dismiss(animated: false, completion: nil)
   }
   
   func scheduleNotification() {
@@ -100,18 +100,6 @@ class PhysicalActivityDetailsViewController: UIViewController {
     if activity.frequency.contains(.Sunday){
       
       let trigger = UNCalendarNotificationTrigger(
-        dateMatching: DateComponents(hour: hour, minute: minute, weekday: 0), repeats: true)
-      
-      let identifier = "\(activity.name)0.notification"
-      
-      addToNotificationCenter(notificationCenter: notificationCenter, identifier: identifier, trigger: trigger)
-    } else {
-      notificationCenter.removePendingNotificationRequests(withIdentifiers: ["\(activity.name)0.notification"])
-    }
-    
-    if activity.frequency.contains(.Monday){
-      
-      let trigger = UNCalendarNotificationTrigger(
         dateMatching: DateComponents(hour: hour, minute: minute, weekday: 1), repeats: true)
       
       let identifier = "\(activity.name)1.notification"
@@ -121,7 +109,7 @@ class PhysicalActivityDetailsViewController: UIViewController {
       notificationCenter.removePendingNotificationRequests(withIdentifiers: ["\(activity.name)1.notification"])
     }
     
-    if activity.frequency.contains(.Tuesday){
+    if activity.frequency.contains(.Monday){
       
       let trigger = UNCalendarNotificationTrigger(
         dateMatching: DateComponents(hour: hour, minute: minute, weekday: 2), repeats: true)
@@ -133,7 +121,7 @@ class PhysicalActivityDetailsViewController: UIViewController {
       notificationCenter.removePendingNotificationRequests(withIdentifiers: ["\(activity.name)2.notification"])
     }
     
-    if activity.frequency.contains(.Wednesday){
+    if activity.frequency.contains(.Tuesday){
       
       let trigger = UNCalendarNotificationTrigger(
         dateMatching: DateComponents(hour: hour, minute: minute, weekday: 3), repeats: true)
@@ -145,7 +133,7 @@ class PhysicalActivityDetailsViewController: UIViewController {
       notificationCenter.removePendingNotificationRequests(withIdentifiers: ["\(activity.name)3.notification"])
     }
     
-    if activity.frequency.contains(.Thursday){
+    if activity.frequency.contains(.Wednesday){
       
       let trigger = UNCalendarNotificationTrigger(
         dateMatching: DateComponents(hour: hour, minute: minute, weekday: 4), repeats: true)
@@ -157,7 +145,7 @@ class PhysicalActivityDetailsViewController: UIViewController {
       notificationCenter.removePendingNotificationRequests(withIdentifiers: ["\(activity.name)4.notification"])
     }
     
-    if activity.frequency.contains(.Friday){
+    if activity.frequency.contains(.Thursday){
       
       let trigger = UNCalendarNotificationTrigger(
         dateMatching: DateComponents(hour: hour, minute: minute, weekday: 5), repeats: true)
@@ -169,7 +157,7 @@ class PhysicalActivityDetailsViewController: UIViewController {
       notificationCenter.removePendingNotificationRequests(withIdentifiers: ["\(activity.name)5.notification"])
     }
     
-    if activity.frequency.contains(.Saturday){
+    if activity.frequency.contains(.Friday){
       
       let trigger = UNCalendarNotificationTrigger(
         dateMatching: DateComponents(hour: hour, minute: minute, weekday: 6), repeats: true)
@@ -179,6 +167,18 @@ class PhysicalActivityDetailsViewController: UIViewController {
       addToNotificationCenter(notificationCenter: notificationCenter, identifier: identifier, trigger: trigger)
     } else {
       notificationCenter.removePendingNotificationRequests(withIdentifiers: ["\(activity.name)6.notification"])
+    }
+    
+    if activity.frequency.contains(.Saturday){
+      
+      let trigger = UNCalendarNotificationTrigger(
+        dateMatching: DateComponents(hour: hour, minute: minute, weekday: 7), repeats: true)
+      
+      let identifier = "\(activity.name)7.notification"
+      
+      addToNotificationCenter(notificationCenter: notificationCenter, identifier: identifier, trigger: trigger)
+    } else {
+      notificationCenter.removePendingNotificationRequests(withIdentifiers: ["\(activity.name)7.notification"])
     }
     
     /* let myOwnDate = Date()
@@ -202,7 +202,7 @@ class PhysicalActivityDetailsViewController: UIViewController {
     let content = UNMutableNotificationContent()
     content.title = "Hora de praticar exercícios"
     content.subtitle = "Vamos tentar a \(activity.name)"
-    //        content.body = "Body body body body"
+    content.body = "Aprenda aqui como executar esta atividade corretamente"
     content.sound = UNNotificationSound.default()
     
     let request = UNNotificationRequest(
