@@ -10,79 +10,79 @@ import Foundation
 import CoreData
 
 public class DataManager {
-  public static var context: NSManagedObjectContext {
-    return persistentContainer.viewContext
-  }
-  
-  // MARK: - Core Data stack
-  
-  static var persistentContainer: NSPersistentContainer = {
-    /*
-     The persistent container for the application. This implementation
-     creates and returns a container, having loaded the store for the
-     application to it. This property is optional since there are legitimate
-     error conditions that could cause the creation of the store to fail.
-     */
-    let container = NSPersistentContainer(name: "Alzheimer_Care")
-    container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-      if let error = error as NSError? {
-        // Replace this implementation with code to handle the error appropriately.
-        // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        
+    public static var context: NSManagedObjectContext {
+        return persistentContainer.viewContext
+    }
+    
+    // MARK: - Core Data stack
+    
+    static var persistentContainer: NSPersistentContainer = {
         /*
-         Typical reasons for an error here include:
-         * The parent directory does not exist, cannot be created, or disallows writing.
-         * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-         * The device is out of space.
-         * The store could not be migrated to the current model version.
-         Check the error message to determine what the actual problem was.
+         The persistent container for the application. This implementation
+         creates and returns a container, having loaded the store for the
+         application to it. This property is optional since there are legitimate
+         error conditions that could cause the creation of the store to fail.
          */
-        fatalError("Unresolved error \(error), \(error.userInfo)")
-      }
-    })
-    return container
-  }()
-  
-  // MARK: - Core Data Saving support
-  
-  static func saveContext () {
-    if context.hasChanges {
-      do {
-        try context.save()
-      } catch {
-        // Replace this implementation with code to handle the error appropriately.
-        // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        let nserror = error as NSError
-        fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-      }
-    }
-  }
-  
-  static func insert(_ object: NSManagedObject) -> Bool {
-    var result = true
+        let container = NSPersistentContainer(name: "Alzheimer_Care")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                
+                /*
+                 Typical reasons for an error here include:
+                 * The parent directory does not exist, cannot be created, or disallows writing.
+                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
+                 * The device is out of space.
+                 * The store could not be migrated to the current model version.
+                 Check the error message to determine what the actual problem was.
+                 */
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
+    }()
     
-    context.insert(object)
-    do {
-      try context.save()
-      result = true
-    } catch let error {
-      print("Insert error, \(object) something bad happened: \(error.localizedDescription)")
-    }
+    // MARK: - Core Data Saving support
     
-    return result
-  }
-  
-  static func delete(_ object: NSManagedObject) -> Bool {
-    var result = true
-    
-    context.delete(object)
-    do {
-      try context.save()
-      result = true
-    } catch let error {
-      print("Delete error, something bad happened: \(error.localizedDescription)")
+    static func saveContext () {
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                // Replace this implementation with code to handle the error appropriately.
+                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
     }
     
-    return result
-  }
+    static func insert(_ object: NSManagedObject) -> Bool {
+        var result = false
+        
+        context.insert(object)
+        do {
+            try context.save()
+            result = true
+        } catch let error {
+            print("Insert error, \(object) something bad happened: \(error.localizedDescription)")
+        }
+        
+        return result
+    }
+    
+    static func delete(_ object: NSManagedObject) -> Bool {
+        var result = false
+        
+        context.delete(object)
+        do {
+            try context.save()
+            result = true
+        } catch let error {
+            print("Delete error, something bad happened: \(error.localizedDescription)")
+        }
+        
+        return result
+    }
 }

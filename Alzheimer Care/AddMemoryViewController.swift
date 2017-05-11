@@ -182,7 +182,7 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
             memory.name = nameMemoryTextField.text!
             memory.date = actualDate
             memory.url = String(describing: audioRecorder.url)
-
+            
             if MemoryDAO.create(memory) {
                 print("A memória \(memory.name!) foi inserida com sucesso!")
             } else {
@@ -196,7 +196,7 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
             
         }
     }
-        
+    
 }
 
 // MARK: - Protocols

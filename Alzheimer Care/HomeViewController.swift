@@ -77,7 +77,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             let objId = psc.managedObjectID(forURIRepresentation: objIdURL), let user = context.object(with: objId) as? User {
             self.activeUser = user
             descriptionLabel.text = "Olá, \(user.name!)!"
-            profileImage.image = UIImage(data: (user.picture!.imageData)! as Data)
+            profileImage.image = UIImage(data: (user.imageData)! as Data)
         } else {
             NSLog("No active user saved -> entering register view")
             performSegue(withIdentifier: "registerSegue", sender: self)

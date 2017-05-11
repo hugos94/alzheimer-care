@@ -11,24 +11,26 @@ import CoreData
 
 
 public class User: NSManagedObject {
-  public static let entityName = "User"
-  
-  convenience init() {
-    let context = DataManager.context
-    let entity = NSEntityDescription.entity(forEntityName: User.entityName, in: context)!
     
-    self.init(entity: entity, insertInto: context)
-  }
-  
-  convenience init(_ name: String, _ phone: String) {
-    let context = DataManager.context
-    let entity = NSEntityDescription.entity(forEntityName: User.entityName, in: context)!
+    public static let entityName = "User"
     
-    self.init(entity: entity, insertInto: context)
+    convenience init() {
+        let context = DataManager.context
+        let entity = NSEntityDescription.entity(forEntityName: User.entityName, in: context)!
+        
+        self.init(entity: entity, insertInto: context)
+    }
     
-    print("----- User Coredata inicializado")
-    
-    self.name = name
-    self.phone = phone
-  }
+    convenience init(_ name: String, _ phone: String, _ image: NSData) {
+        let context = DataManager.context
+        let entity = NSEntityDescription.entity(forEntityName: User.entityName, in: context)!
+        
+        self.init(entity: entity, insertInto: context)
+        
+        print("----- User Coredata inicializado")
+        
+        self.name = name
+        self.phone = phone
+        self.imageData = image
+    }
 }

@@ -9,9 +9,9 @@
 import Foundation
 
 public protocol DataAccessObject {
-  associatedtype E
-  
-  static func create(_ entity: E) -> Bool
-  static func read() -> [E]
-  static func delete(_ entity: E) -> Bool
+    associatedtype E
+    
+    static func create(_ entity: E) -> Bool
+    static func read() -> [E]
+    static func delete(_ entity: E) -> Bool
 }

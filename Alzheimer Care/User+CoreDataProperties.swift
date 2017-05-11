@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  Alzheimer Care
 //
-//  Created by Student on 5/9/17.
+//  Created by Hugo Santos Piauilino Neto on 11/05/17.
 //  Copyright © 2017 Hugo Santos Piauilino. All rights reserved.
 //
 
@@ -18,6 +18,6 @@ extension User {
 
     @NSManaged public var name: String?
     @NSManaged public var phone: String?
-    @NSManaged public var picture: ProfilePicture?
+    @NSManaged public var imageData: NSData?
 
 }

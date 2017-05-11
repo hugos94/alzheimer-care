@@ -9,7 +9,7 @@
 import UIKit
 
 class MemoryTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var memoryNameLabel: UILabel!
     @IBOutlet weak var memoryDateLabel: UILabel!
     @IBOutlet weak var memoryPlayButton: UIButton!
@@ -23,5 +23,5 @@ class MemoryTableViewCell: UITableViewCell {
             onButtonTapped()
         }
     }
-
+    
 }

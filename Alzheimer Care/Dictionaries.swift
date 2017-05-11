@@ -10,25 +10,25 @@ import Foundation
 
 class Dictionaries {
     static let weekDay: [String: String] = ["Sun": "Domingo",
-                                     "Mon": "Segunda",
-                                     "Tue": "Terça",
-                                     "Wed": "Quarta",
-                                     "Thu": "Quinta",
-                                     "Fri": "Sexta",
-                                     "Sat": "Sábado"
+                                            "Mon": "Segunda",
+                                            "Tue": "Terça",
+                                            "Wed": "Quarta",
+                                            "Thu": "Quinta",
+                                            "Fri": "Sexta",
+                                            "Sat": "Sábado"
     ]
     
     static let month: [String: String] = [  "Jan": "Janeiro",
-                                     "Feb": "Fevereiro",
-                                     "Mar": "Março",
-                                     "Apr": "Abril",
-                                     "May": "Maio",
-                                     "Jun": "Junho",
-                                     "Jul": "Julho",
-                                     "Aug": "Agosto",
-                                     "Sep": "Setembro",
-                                     "Oct": "Outubro",
-                                     "Nov": "Novembro",
-                                     "Dec": "Dezembro"
+                                            "Feb": "Fevereiro",
+                                            "Mar": "Março",
+                                            "Apr": "Abril",
+                                            "May": "Maio",
+                                            "Jun": "Junho",
+                                            "Jul": "Julho",
+                                            "Aug": "Agosto",
+                                            "Sep": "Setembro",
+                                            "Oct": "Outubro",
+                                            "Nov": "Novembro",
+                                            "Dec": "Dezembro"
     ]
 }
