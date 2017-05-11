@@ -4,6 +4,8 @@
 //
 //  Created by Hugo Santos Piauilino Neto on 05/05/17.
 //  Copyright © 2017 Hugo Santos Piauilino. All rights reserved.
+//  "B9407F30-F5F8-466E-AFF9-25556B57FE6D"
+//  maior = 50668 menor= 34186
 //
 
 import UIKit
@@ -11,8 +13,7 @@ import CoreLocation
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
-    //"B9407F30-F5F8-466E-AFF9-25556B57FE6D"
-    // maior = 50668 menor= 34186
+    // MARK: - Properties
     
     var auxLonge = 0
     var auxUnknow = 0
@@ -22,7 +23,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     var locationManager: CLLocationManager!
     
     let context = DataManager.context
-    // MARK: - Properties
     
     @IBOutlet weak var initialInformationTextView: UITextView!
     
@@ -65,6 +65,8 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    // MARK: - iBeacons Functions
+    
     func notificaLonge(){
         
         let alert = UIAlertController(title: "Atenção!", message: "Você está saindo muito longe de sua casa!", preferredStyle: .actionSheet)
@@ -103,7 +105,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         }
         
     }
-    
     
     func updateDistance(distance: CLProximity){
         
@@ -161,7 +162,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
-    
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
         
         let knownBeacons = beacons.filter{ $0.proximity != CLProximity.unknown }
@@ -169,7 +169,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             let beacon = beacons.first! as CLBeacon
             
             updateDistance(distance: beacon.proximity)
-
+            
         }else {
             updateDistance(distance: .unknown)
             print("found only one beacon")
