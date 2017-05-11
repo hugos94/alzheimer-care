@@ -21,7 +21,12 @@ public class User: NSManagedObject {
   }
   
   convenience init(_ name: String, _ phone: String) {
-    self.init()
+    let context = DataManager.context
+    let entity = NSEntityDescription.entity(forEntityName: User.entityName, in: context)!
+    
+    self.init(entity: entity, insertInto: context)
+    
+    print("----- User Coredata inicializado")
     
     self.name = name
     self.phone = phone

@@ -59,21 +59,21 @@ public class DataManager {
   }
   
   static func insert(_ object: NSManagedObject) -> Bool {
-    var result = false
+    var result = true
     
     context.insert(object)
     do {
       try context.save()
       result = true
     } catch let error {
-      print("Insert error, something bad happened: \(error.localizedDescription)")
+      print("Insert error, \(object) something bad happened: \(error.localizedDescription)")
     }
     
     return result
   }
   
   static func delete(_ object: NSManagedObject) -> Bool {
-    var result = false
+    var result = true
     
     context.delete(object)
     do {
