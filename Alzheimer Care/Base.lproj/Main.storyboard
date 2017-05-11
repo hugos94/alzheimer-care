@@ -427,7 +427,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" selectedImage="home" id="KKi-de-qdO"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home" id="KKi-de-qdO"/>
                     <connections>
                         <outlet property="initialInformationTextView" destination="ERm-JD-qMn" id="lvB-1Y-rjk"/>
                         <segue destination="8m8-5X-JHD" kind="show" identifier="registerSegue" id="B3b-cj-DB0"/>
@@ -460,7 +460,7 @@
         <scene sceneID="F8i-BT-qus">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jSX-F0-CJF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Timeline" selectedImage="timeline" id="1rk-fl-iYa"/>
+                    <tabBarItem key="tabBarItem" title="Timeline" image="timeline" selectedImage="timeline" id="1rk-fl-iYa"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pl2-TH-THd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -479,7 +479,7 @@
         <scene sceneID="XmJ-Wq-egl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iRv-4d-IRJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Activities" selectedImage="altere" id="1LU-En-Vgu"/>
+                    <tabBarItem key="tabBarItem" title="Activities" image="altere" selectedImage="altere" id="1LU-En-Vgu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jp9-Ww-hhK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
