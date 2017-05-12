@@ -39,6 +39,10 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
         
         playButton.isHidden = true
         
+        addButtonBorder(button: playButton)
+        
+        addButtonBorder(button: recordButton)
+        
         actualDate = NSDate()
         
         audioName = "\(actualDate.description).m4a"
@@ -46,6 +50,14 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
         navigationItem.title = "Adicionar Memória"
         
         createRecordSession()
+        
+    }
+    
+    private func addButtonBorder (button: UIButton) {
+        button.backgroundColor = .clear
+        button.layer.cornerRadius = 7
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.blue.cgColor
     }
     
     // MARK: - AV Audio Functions
@@ -127,6 +139,7 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
         if success {
             print(success)
             playButton.isHidden = false
+            recordButton.isHidden = true
         } else {
             audioRecorder = nil
             print("Something Wrong.")
@@ -147,11 +160,13 @@ class AddMemoryViewController: UIViewController, AVAudioRecorderDelegate, AVAudi
             self.audioPlayer.prepareToPlay()
             self.audioPlayer.delegate = self
             self.audioPlayer.play()
+            self.playButton.setImage(#imageLiteral(resourceName: "pause"), for: .normal)
         }
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         print(flag)
+        self.playButton.setImage(#imageLiteral(resourceName: "play"), for: .normal)
     }
     func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?){
         print(error.debugDescription)

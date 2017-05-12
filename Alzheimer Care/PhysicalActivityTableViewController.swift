@@ -16,6 +16,8 @@ class PhysicalActivityTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.title = "Atividades Físicas"
+        
         activities.append(Activity(
             name: "Contrações Abdominais",
             description: "Para aumentar a força nos músculos abdominais, e reduzir dores nas costas. Respire fundo e contraia os músculos abdominais. Segure por três respirações e depois solte a contração. Repita 10 vezes.",
@@ -178,5 +180,9 @@ class PhysicalActivityTableViewController: UITableViewController {
         }
     }
     
+    
+    @IBAction func retturnButton(_ sender: Any) {
+        navigationController?.dismiss(animated: true, completion: nil)
+    }
     
 }

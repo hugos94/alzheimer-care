@@ -136,7 +136,7 @@
 		3F9A87381EC32EBE00C7A6F5 /* Memory */ = {
 			isa = PBXGroup;
 			children = (
-				3FFA3E621EC0A95E00A1148E /* MemoryTableViewCell.swift */,
+				F585C1DE1EC5371900C348B3 /* Cell */,
 				F53118D21EBEC19C0035DA11 /* AddMemoryViewController.swift */,
 				F53118D41EBEC5460035DA11 /* TimelineTableViewController.swift */,
 			);
@@ -164,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				F53118D61EBEC5900035DA11 /* ActivitiesViewController.swift */,
-				F52600471EC13A74004232EF /* PhysicalActivityTableViewCell.swift */,
+				F585C1DD1EC5371300C348B3 /* Cell */,
 				F52600491EC13A8E004232EF /* PhysicalActivityTableViewController.swift */,
 				3F4D2C221EC489C700BD3AD5 /* PhysicalActivityDetailsViewController.swift */,
 			);
@@ -213,6 +213,22 @@
 				832A5B18D65344B3793FAC37 /* Pods-Alzheimer CareUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F585C1DD1EC5371300C348B3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F52600471EC13A74004232EF /* PhysicalActivityTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		F585C1DE1EC5371900C348B3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3FFA3E621EC0A95E00A1148E /* MemoryTableViewCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		F58FAA001EBE8E2F00BC31D2 /* Controllers */ = {

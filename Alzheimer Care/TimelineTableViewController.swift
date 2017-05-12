@@ -24,6 +24,10 @@ class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate,
         tableView.reloadData()
     }
     
+    private func OKButton() -> UIAlertAction {
+        return UIAlertAction(title: "OK", style: .default, handler: nil)
+    }
+    
     // MARK: - System Functions
     
     override func viewDidLoad() {
@@ -62,11 +66,18 @@ class TimelineTableViewController: UITableViewController, AVAudioPlayerDelegate,
             memoryCell.memoryDateLabel.text = MemoryDAO.getFormattedData(date: memory.date as! Date)
             memoryCell.memoryPlayButton.setImage(#imageLiteral(resourceName: "playRecord"), for: .normal)
             memoryCell.onButtonTapped = {
-                self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(string: memory.url!)!)
-                self.audioPlayer.prepareToPlay()
-                self.audioPlayer.delegate = self
-                self.audioPlayer.play()
-                memoryCell.memoryPlayButton.setImage(#imageLiteral(resourceName: "playRecordFilled"), for: .normal)
+                do {
+                    try self.audioPlayer = AVAudioPlayer(contentsOf: URL(string: memory.url!)!)
+                    self.audioPlayer.prepareToPlay()
+                    self.audioPlayer.delegate = self
+                    self.audioPlayer.play()
+                    memoryCell.memoryPlayButton.setImage(#imageLiteral(resourceName: "playRecordFilled"), for: .normal)
+                } catch let error {
+                    let alert = UIAlertController(title: "Erro!", message: "Não foi possível reproduzir o áudio escolhido.", preferredStyle: .alert)
+                    alert.addAction(self.OKButton())
+                    self.present(alert, animated: true, completion: nil)
+                    print("\(error.localizedDescription)")
+                }
             }
         }
         

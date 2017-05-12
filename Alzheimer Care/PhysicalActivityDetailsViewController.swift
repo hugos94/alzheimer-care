@@ -59,7 +59,7 @@ class PhysicalActivityDetailsViewController: UIViewController {
         
         print("Entrou aqui")
         
-        dismiss(animated: false, completion: nil)
+        _ = navigationController?.popViewController(animated: true)
     }
     
     func scheduleNotification() {
@@ -229,6 +229,8 @@ class PhysicalActivityDetailsViewController: UIViewController {
         timeDatePicker.datePickerMode = UIDatePickerMode.time
         
         descriptionTextView.text = activity.description
+        
+        navigationItem.title = activity.name
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat =  "HH:mm"

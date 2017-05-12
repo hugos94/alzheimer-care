@@ -35,6 +35,10 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         emergencyCall()
     }
     
+    private func OKButton() -> UIAlertAction {
+        return UIAlertAction(title: "OK", style: .default, handler: nil)
+    }
+    
     func emergencyCall() {
         if let objIdURL = UserDefaults.standard.url(forKey: "ACTIVE_USER_URL"), let psc = context.persistentStoreCoordinator,
             let objId = psc.managedObjectID(forURIRepresentation: objIdURL), let user = context.object(with: objId) as? User {
@@ -44,9 +48,12 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
                 let application:UIApplication = UIApplication.shared
                 if (application.canOpenURL(phoneCallURL)) {
                     application.open(phoneCallURL, options: [:], completionHandler: nil)
+                } else {
+                    let alert = UIAlertController(title: "Sem telefone!", message: "Desculpe, esse dispositivo não pode realizar chamadas.", preferredStyle: .alert)
+                    alert.addAction(OKButton())
+                    present(alert, animated: true, completion: nil)
                 }
             }
-            
         } else {
             NSLog("No active user saved -> entering register view")
             performSegue(withIdentifier: "registerSegue", sender: self)
